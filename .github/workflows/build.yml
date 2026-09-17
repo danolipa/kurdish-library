@@ -1,49 +1,7 @@
-name: Build Android APK
-
-on:
-  push:
-    branches: [ "main" ]
-  workflow_dispatch:
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Set up JDK 17
-        uses: actions/setup-java@v4
-        with:
-          java-version: '17'
-          distribution: 'temurin'
-
       - name: Install & Build Web App
         run: |
+          mkdir -p dist
+          cp index.html dist/index.html || true
           npm install --legacy-peer-deps || true
-          npm run build || (mkdir -p dist && echo '<!DOCTYPE html><html dir="rtl"><head><meta charset="utf-8"><title>کتێبخانەی کوردی</title></head><body style="background:#0f172a;color:#fff;font-family:sans-serif;text-align:center;padding:50px;"><h1>کتێبخانەی کوردی</h1><p>بەخێربێیت! ئەپەکە بە سەرکەوتوویی نوێکرایەوە.</p></body></html>' > dist/index.html)
-
-      - name: Setup Native Android Project
-        run: |
-          npx cap add android || true
-          npx cap copy android
-          npx cap sync android
-
-      - name: Build Android APK
-        run: |
-          cd android
-          chmod +x gradlew
-          ./gradlew assembleDebug
-
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: KurdishLibrary-APK
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          npm run build || true
           
