@@ -584,12 +584,24 @@
       });
       container.innerHTML = html || 'هیچ وتەیەک نەدۆزرایەوە.';
     }
+      let books = [];
+
+    async function loadBooksFromJSON() {
+      try {
+        const res = await fetch('books.json');
+        books = await res.json();
+        renderBooks(books);
+      } catch (err) {
+        console.error("Error loading books.json:", err);
+      }
+    }
 
     window.addEventListener('DOMContentLoaded', () => {
       const savedTheme = localStorage.getItem('kurdish_lib_theme') || 'dark';
       setTheme(savedTheme);
-      renderBooks(books);
+      adjustFontSize(0);
+      loadBooksFromJSON();
     });
-  </script>
+    
 </body>
 </html>
