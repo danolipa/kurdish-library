@@ -1,151 +1,595 @@
 <!DOCTYPE html>
 <html lang="ckb" dir="rtl">
 <head>
-
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>کتێبخانەی کوردی</title>
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Vazirmatn Kurdish Font -->
-  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { vazir: ['Vazirmatn', 'sans-serif'] },
-          colors: { sepia: { bg: '#FBF0D9', text: '#4A3B32' } }
-        }
+  <style>
+    /* Reset & CSS Variables */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --border-color: #334155;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent-color: #38bdf8;
+      --quote-bg: #090d16;
+      --quote-text: #fde047;
+    }
+
+    body.theme-light {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --border-color: #e2e8f0;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --accent-color: #0284c7;
+      --quote-bg: #f1f5f9;
+      --quote-text: #854d0e;
+    }
+
+    body.theme-sepia {
+      --bg-color: #fbf0d9;
+      --card-bg: #f4e4c1;
+      --border-color: #e2d2ad;
+      --text-main: #4a3b32;
+      --text-muted: #786455;
+      --accent-color: #b45309;
+      --quote-bg: #ebd8b0;
+      --quote-text: #92400e;
+    }
+
+    body.theme-eink {
+      --bg-color: #ffffff;
+      --card-bg: #ffffff;
+      --border-color: #000000;
+      --text-main: #000000;
+      --text-muted: #333333;
+      --accent-color: #000000;
+      --quote-bg: #f0f0f0;
+      --quote-text: #000000;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+      -webkit-user-select: none;
+      direction: rtl;
+    }
+
+    /* Header */
+    header {
+      background-color: var(--card-bg);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-logo {
+      width: 36px;
+      height: 36px;
+      background: var(--accent-color);
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    .brand-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--accent-color);
+    }
+
+    .theme-buttons {
+      display: flex;
+      gap: 4px;
+      background: var(--bg-color);
+      padding: 4px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+
+    .theme-btn {
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      padding: 6px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .theme-btn.active {
+      background: var(--accent-color);
+      color: #ffffff;
+    }
+
+    /* Main Area */
+    main {
+      flex: 1;
+      max-width: 650px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 16px;
+      padding-bottom: 80px;
+    }
+
+    .search-box {
+      margin-bottom: 20px;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      background-color: var(--card-bg);
+      color: var(--text-main);
+      font-size: 14px;
+      outline: none;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent-color);
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--accent-color);
+      margin-bottom: 12px;
+      border-right: 4px solid var(--accent-color);
+      padding-right: 8px;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    @media (min-width: 480px) {
+      .book-grid {
+        grid-template-columns: 1fr 1fr;
       }
     }
-  </script>
-  <style>
-    body { font-family: 'Vazirmatn', sans-serif; }
-    .theme-light { background-color: #f8fafc; color: #0f172a; }
-    .theme-dark { background-color: #020617; color: #f8fafc; }
-    .theme-sepia { background-color: #FBF0D9; color: #4A3B32; }
-    .theme-eink { background-color: #ffffff; color: #000000; border: 2px solid #000; }
+
+    .book-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      padding: 16px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.15s ease;
+    }
+
+    .book-card:active {
+      transform: scale(0.98);
+    }
+
+    .book-tag {
+      display: inline-block;
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent-color);
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .book-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .book-author {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .book-snippet {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Modal Reader */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      z-index: 100;
+      padding: 16px;
+      overflow-y: auto;
+    }
+
+    .modal-overlay.active {
+      display: block;
+    }
+
+    .modal-content {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 20px;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    .back-btn {
+      background: var(--border-color);
+      color: var(--text-main);
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 16px;
+    }
+
+    .modal-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 4px;
+      color: var(--accent-color);
+    }
+
+    .modal-author {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .summary-heading {
+      font-size: 15px;
+      font-weight: bold;
+      margin: 16px 0 8px 0;
+      color: var(--accent-color);
+    }
+
+    .summary-text {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .quote-box {
+      background-color: var(--quote-bg);
+      border: 1px solid var(--border-color);
+      padding: 12px;
+      border-radius: 10px;
+      margin-top: 8px;
+    }
+
+    .quote-item {
+      font-size: 13px;
+      color: var(--quote-text);
+      line-height: 1.6;
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px dashed var(--border-color);
+    }
+
+    .quote-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .quote-en {
+      font-size: 11px;
+      color: var(--text-muted);
+      direction: ltr;
+      text-align: left;
+      margin-top: 2px;
+    }
+
+    /* Bottom Nav Bar */
+    nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: var(--card-bg);
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      z-index: 40;
+    }
+
+    .nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 11px;
+      cursor: pointer;
+      gap: 2px;
+    }
+
+    .nav-item.active {
+      color: var(--accent-color);
+      font-weight: bold;
+    }
+
+    .nav-icon {
+      font-size: 18px;
+    }
   </style>
 </head>
-<body class="theme-dark min-h-screen flex flex-col justify-between pb-16 select-none">
+<body class="theme-dark">
 
-  <!-- Header / Navigation Bar -->
-  <header class="p-4 bg-slate-900 border-b border-slate-800 flex justify-between items-center sticky top-0 z-50">
-    <div class="flex items-center gap-2">
-      <div class="w-8 h-8 bg-sky-500 rounded-lg flex items-center justify-center font-bold text-slate-950">کـ</div>
-      <h1 class="text-xl font-bold text-sky-400">کتێبخانەی کوردی</h1>
+  <!-- Header -->
+  <header>
+    <div class="brand">
+      <div class="brand-logo">کـ</div>
+      <div class="brand-title">کتێبخانەی کوردی</div>
     </div>
-    <!-- Theme Switcher Buttons -->
-    <div class="flex gap-1 bg-slate-800 p-1 rounded-lg text-xs">
-      <button onclick="setTheme('light')" class="px-2 py-1 rounded bg-slate-700 text-white">☀️ Light</button>
-      <button onclick="setTheme('dark')" class="px-2 py-1 rounded bg-slate-700 text-white">🌙 Dark</button>
-      <button onclick="setTheme('sepia')" class="px-2 py-1 rounded bg-amber-200 text-amber-900">📜 Sepia</button>
-      <button onclick="setTheme('eink')" class="px-2 py-1 rounded bg-white text-black font-bold">📖 E-Ink</button>
+    <div class="theme-buttons">
+      <button onclick="setTheme('light')" id="btn-light" class="theme-btn">☀️ Light</button>
+      <button onclick="setTheme('dark')" id="btn-dark" class="theme-btn active">🌙 Dark</button>
+      <button onclick="setTheme('sepia')" id="btn-sepia" class="theme-btn">📜 Sepia</button>
+      <button onclick="setTheme('eink')" id="btn-eink" class="theme-btn">📖 E-Ink</button>
     </div>
   </header>
 
-  <!-- Main Content Area -->
-  <main id="app-content" class="p-4 max-w-2xl mx-auto flex-1 w-full">
-    
-    <!-- Catalog Search & Filter -->
-    <div class="mb-6">
-      <input type="text" id="searchInput" onkeyup="filterBooks()" placeholder="گەڕان بەدوای کتێب، نووسەر، یان بوار..." 
-             class="w-full p-3 rounded-xl bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-sky-500 text-sm">
+  <!-- Main View -->
+  <main id="mainView">
+    <!-- Search Box -->
+    <div class="search-box">
+      <input type="text" id="searchInput" oninput="filterBooks()" placeholder="گەڕان بەدوای کتێب، نووسەر، یان بوار..." class="search-input">
     </div>
 
-    <!-- Featured Books Catalog -->
-    <section>
-      <h2 class="text-lg font-bold mb-4 text-sky-400 border-r-4 border-sky-500 pr-2">کۆمەڵەی پوختەی کتێبەکان</h2>
-      <div id="bookGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        
-        <!-- Book Card Example 1 -->
-        <div onclick="openSummary(1)" class="bg-slate-900 border border-slate-800 p-4 rounded-xl cursor-pointer hover:border-sky-500 transition">
-          <span class="text-xs bg-sky-500/10 text-sky-400 px-2 py-1 rounded-md">خۆپەرەسەندن</span>
-          <h3 class="font-bold text-lg mt-2 text-white">ئادەتە بچووکەکان (Atomic Habits)</h3>
-          <p class="text-xs text-slate-400 mt-1">نووسەر: جەیمس کلێر | ساڵ: ٢٠١٨</p>
-          <p class="text-sm text-slate-300 mt-3 line-clamp-2">ڕێگایەکی ئاسان و سەلمێنراو بۆ دروستکردنی ئادەتی باش و تێکشکاندنی ئادەتە خراپەکان...</p>
-        </div>
+    <!-- Home Catalog -->
+    <div id="tabHome">
+      <div class="section-title">کۆمەڵەی پوختەی کتێبەکان</div>
+      <div id="bookGrid" class="book-grid"></div>
+    </div>
 
-        <!-- Book Card Example 2 -->
-        <div onclick="openSummary(2)" class="bg-slate-900 border border-slate-800 p-4 rounded-xl cursor-pointer hover:border-sky-500 transition">
-          <span class="text-xs bg-emerald-500/10 text-emerald-400 px-2 py-1 rounded-md">فەلسەفە</span>
-          <h3 class="font-bold text-lg mt-2 text-white">مرۆڤ لە دوای مانادا دەگەڕێت</h3>
-          <p class="text-xs text-slate-400 mt-1">نووسەر: ڤیکتۆر فرانکڵ | ساڵ: ١٩٤٦</p>
-          <p class="text-sm text-slate-300 mt-3 line-clamp-2">ئەزموونی دەروونپزیشکێک لە سەربازگەکانی مەرگ و دۆزینەوەی ئامانجی ژیان...</p>
-        </div>
+    <!-- Quotes Tab -->
+    <div id="tabQuotes" style="display: none;">
+      <div class="section-title">١٠ وتەی دیار و کاریگەر</div>
+      <div id="quotesContainer" class="quote-box"></div>
+    </div>
 
+    <!-- Settings Tab -->
+    <div id="tabSettings" style="display: none;">
+      <div class="section-title">ڕێکخستنەکانی بەرنامە</div>
+      <div class="book-card" style="margin-bottom: 12px;">
+        <div class="book-title">دەربارەی بەرنامە</div>
+        <div class="book-snippet">کتێبخانەی کوردی - وەشانی ١.٠.٠<br>ئەپڵیکەیشنی تایبەت بە خوێندنەوەی پوختەی کتێبەکان و وتە بەناوبانگەکان.</div>
       </div>
-    </section>
-
-    <!-- Summary & E-Reader Modal Container -->
-    <div id="readerModal" class="hidden fixed inset-0 bg-slate-950/95 z-50 p-4 overflow-y-auto">
-      <button onclick="closeModal()" class="mb-4 bg-slate-800 text-white px-4 py-2 rounded-xl text-sm font-bold">← بگەڕێوە بۆ کتێبخانە</button>
-      <div id="modalBody" class="bg-slate-900 border border-slate-800 p-6 rounded-2xl max-w-2xl mx-auto"></div>
     </div>
-
   </main>
 
-  <!-- Bottom Navigation Bar -->
-  <nav class="fixed bottom-0 left-0 right-0 bg-slate-900 border-t border-slate-800 flex justify-around p-3 text-xs text-slate-400 z-40">
-    <button onclick="showTab('home')" class="flex flex-col items-center text-sky-400 font-bold">
-      <span>🏠</span><span>ماڵەوە</span>
+  <!-- Modal Reader -->
+  <div id="readerModal" class="modal-overlay">
+    <div class="modal-content">
+      <button onclick="closeModal()" class="back-btn">← بگەڕێوە بۆ کتێبخانە</button>
+      <div id="modalTitle" class="modal-title"></div>
+      <div id="modalAuthor" class="modal-author"></div>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Bottom Nav -->
+  <nav>
+    <button onclick="showTab('home')" id="navHome" class="nav-item active">
+      <span class="nav-icon">🏠</span>
+      <span>ماڵەوە</span>
     </button>
-    <button onclick="showTab('library')" class="flex flex-col items-center">
-      <span>📚</span><span>کتێبەکانم</span>
+    <button onclick="showTab('quotes')" id="navQuotes" class="nav-item">
+      <span class="nav-icon">💬</span>
+      <span>وتەکان</span>
     </button>
-    <button onclick="showTab('quotes')" class="flex flex-col items-center">
-      <span>💬</span><span>وتەکان</span>
-    </button>
-    <button onclick="showTab('settings')" class="flex flex-col items-center">
-      <span>⚙️</span><span>ڕێکخستن</span>
+    <button onclick="showTab('settings')" id="navSettings" class="nav-item">
+      <span class="nav-icon">⚙️</span>
+      <span>ڕێکخستن</span>
     </button>
   </nav>
 
   <script>
-    const sampleBook = {
-      title: "ئادەتە بچووکەکان (Atomic Habits)",
-      author: "جەیمس کلێر",
-      summary: `
-        <h3 class="text-xl font-bold mb-3 text-sky-400">① پێشەکی</h3>
-        <p class="mb-4 text-slate-300 leading-relaxed">ئەم کتێبە جەخت لەسەر هێزی گۆڕانکارییە بچووکەکان دەکاتەوە. گۆڕانکاری ١٪ ڕۆژانە دوای ساڵێک دەتباتە ئاستێکی زۆر بەرزتر.</p>
-        <h3 class="text-xl font-bold mb-3 text-sky-400">② کێشەی سەرەکی کتێب</h3>
-        <p class="mb-4 text-slate-300 leading-relaxed">خەڵکی زۆرجار هەوڵی گۆڕینی ئامانجەکان دەدەن لە شوێنی گۆڕینی سیستەمی ژیانیان.</p>
-        <h3 class="text-xl font-bold mb-3 text-sky-400">③ خاڵە سەرەکییەکان (Key Takeaways)</h3>
-        <ul class="list-disc pr-5 mb-6 text-slate-300 space-y-2">
-          <li>دیاریکردنی ناسنامە: نەک بڵێیت دەمەوێ کتێب بخوێنمەوە، بڵێ من خوێنەرم.</li>
-          <li>یاسای یەکەم: ئادەتەکە ڕوون و دیار بکه (Make it obvious).</li>
-          <li>یاسای دووەم: ئادەتەکە ڕاکێشەر بکه (Make it attractive).</li>
-          <li>یاسای سێیەم: ئادەتەکە ئاسان بکە (Make it easy).</li>
-          <li>یاسای چوارەم: ئادەتەکە چێژبەخش بکە (Make it satisfying).</li>
-        </ul>
-        <h3 class="text-xl font-bold mb-4 text-sky-400">💬 ١٠ وتەی بەناوبانگی کتێبەکە</h3>
-        <div class="space-y-3 bg-slate-950 p-4 rounded-xl border border-slate-800">
-          <p class="text-sm text-amber-300">١. "تۆ بەرز نابیتەوە بۆ ئاستی ئامانجەکانت، بەڵکو دادەبەزیت بۆ ئاستی سیستەمەکانت."</p>
-          <p class="text-xs text-slate-500 font-sans">"You do not rise to the level of your goals. You fall to the level of your systems."</p>
-          <hr class="border-slate-800">
-          <p class="text-sm text-amber-300">٢. "گۆڕانکارییە بچووکەکان ئەنجامی گەورە دروست دەکەن."</p>
-          <p class="text-xs text-slate-500 font-sans">"Changes that seem small and unimportant at first will compound into remarkable results."</p>
-        </div>
-      `
-    };
+    const books = [
+      {
+        id: 1,
+        tag: "خۆپەرەسەندن",
+        title: "ئادەتە بچووکەکان (Atomic Habits)",
+        author: "جەیمس کلێر | ساڵی ٢٠١٨",
+        snippet: "ڕێگایەکی ئاسان و سەلمێنراو بۆ دروستکردنی ئادەتی باش و تێکشکاندنی ئادەتە خراپەکان...",
+        summary: `
+          <div class="summary-heading">① پێشەکی کتێب</div>
+          <div class="summary-text">ئەم کتێبە جەخت لەسەر هێزی گۆڕانکارییە بچووکەکان دەکاتەوە. گۆڕانکاری ١٪ ڕۆژانە دوای ساڵێک دەتباتە ئاستێکی زۆر بەرزتر.</div>
+          <div class="summary-heading">② کێشەی سەرەکی</div>
+          <div class="summary-text">خەڵکی زۆرجار هەوڵی گۆڕینی ئامانجەکان دەدەن لە شوێنی گۆڕینی سیستەمی ژیانیان.</div>
+          <div class="summary-heading">③ یاساکانی دروستکردنی ئادەت</div>
+          <div class="summary-text">
+            • یاسای یەکەم: ئادەتەکە ڕوون و دیار بکە (Make it obvious)<br>
+            • یاسای دووەم: ئادەتەکە ڕاکێشەر بکە (Make it attractive)<br>
+            • یاسای سێیەم: ئادەتەکە ئاسان بکە (Make it easy)<br>
+            • یاسای چوارەم: ئادەتەکە چێژبەخش بکە (Make it satisfying)
+          </div>
+        `,
+        quotes: [
+          { ckb: "تۆ بەرز نابیتەوە بۆ ئاستی ئامانجەکانت، بەڵکو دادەبەزیت بۆ ئاستی سیستەمەکانت.", en: "You do not rise to the level of your goals. You fall to the level of your systems." },
+          { ckb: "گۆڕانکارییە بچووکەکان ئەنجامی گەورە دروست دەکەن.", en: "Changes that seem small and unimportant at first will compound into remarkable results." }
+        ]
+      },
+      {
+        id: 2,
+        tag: "فەلسەفە & دەروونناسی",
+        title: "مرۆڤ لە دوای مانادا دەگەڕێت",
+        author: "ڤیکتۆر فرانکڵ | ساڵی ١٩٤٦",
+        snippet: "ئەزموونی دەروونپزیشکێک لە سەربازگەکانی مەرگی نازیدا و دۆزینەوەی ئامانجی ژیان...",
+        summary: `
+          <div class="summary-heading">① تێگەیشتن لە مانا</div>
+          <div class="summary-text">ڤیکتۆر فرانکڵ لە ڕێگەی دەروونناسیی لۆگۆتێراپییەوە ڕوونی دەکاتەوە کە مرۆڤ تەنانەت لە سەختترین ئازارەکانیشدا دەتوانێت مانا بدۆزێتەوە.</div>
+          <div class="summary-heading">② سەرچاوەکانی مانا</div>
+          <div class="summary-text">
+            • ڕێگەی یەکەم: لە ڕێگەی کارکردن یان بەدیهێنانی ئامانجێک.<br>
+            • ڕێگەی دووەم: لە ڕێگەی ئەزموونکردنی خۆشەویستی.<br>
+            • ڕێگەی سێیەم: هەڵوێست و ڕەفتارت بەرامبەر ئازارە نەبڕاوەکان.
+          </div>
+        `,
+        quotes: [
+          { ckb: "ئەو کەسەی هۆکارێکی هەیە بۆ ژیان، دەتوانێت بەرگەی هەر چۆنێک بگرێت.", en: "He who has a why to live can bear almost any how." },
+          { ckb: "کاتێک ناتوانین بارودۆخێک بگۆڕین، ڕووبەڕووی ئاڵۆنگاری دەبینەوە بۆ گۆڕینی خۆمان.", en: "When we are no longer able to change a situation, we are challenged to change ourselves." }
+        ]
+      }
+    ];
 
-    function setTheme(theme) {
-      document.body.className = `theme-${theme} min-h-screen flex flex-col justify-between pb-16 select-none`;
+    function renderBooks(bookList) {
+      const grid = document.getElementById('bookGrid');
+      grid.innerHTML = '';
+      if (bookList.length === 0) {
+        grid.innerHTML = '<div style="color: var(--text-muted); padding: 20px 0;">هیچ کتێبێک نەدۆزرایەوە...</div>';
+        return;
+      }
+      bookList.forEach(book => {
+        const card = document.createElement('div');
+        card.className = 'book-card';
+        card.onclick = () => openSummary(book.id);
+        card.innerHTML = `
+          <span class="book-tag">${book.tag}</span>
+          <div class="book-title">${book.title}</div>
+          <div class="book-author">${book.author}</div>
+          <div class="book-snippet">${book.snippet}</div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function filterBooks() {
+      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+      const filtered = books.filter(b => 
+        b.title.toLowerCase().includes(query) || 
+        b.author.toLowerCase().includes(query) || 
+        b.tag.toLowerCase().includes(query)
+      );
+      renderBooks(filtered);
     }
 
     function openSummary(id) {
-      document.getElementById('modalBody').innerHTML = `
-        <h2 class="text-2xl font-bold text-white mb-1">${sampleBook.title}</h2>
-        <p class="text-sm text-slate-400 mb-6">نووسەر: ${sampleBook.author}</p>
-        <div>${sampleBook.summary}</div>
-      `;
-      document.getElementById('readerModal').classList.remove('hidden');
+      const book = books.find(b => b.id === id);
+      if (!book) return;
+
+      document.getElementById('modalTitle').innerText = book.title;
+      document.getElementById('modalAuthor').innerText = book.author;
+
+      let quotesHTML = '';
+      if (book.quotes && book.quotes.length > 0) {
+        quotesHTML = `
+          <div class="summary-heading">💬 وتە دیارەکانی ئەم کتێبە</div>
+          <div class="quote-box">
+            ${book.quotes.map((q, i) => `
+              <div class="quote-item">
+                <div><b>${i + 1}.</b> "${q.ckb}"</div>
+                <div class="quote-en">${q.en}</div>
+              </div>
+            `).join('')}
+          </div>
+        `;
+      }
+
+      document.getElementById('modalBody').innerHTML = book.summary + quotesHTML;
+      document.getElementById('readerModal').classList.add('active');
     }
 
     function closeModal() {
-      document.getElementById('readerModal').classList.add('hidden');
+      document.getElementById('readerModal').classList.remove('active');
     }
+
+    function setTheme(theme) {
+      document.body.className = `theme-${theme}`;
+      document.querySelectorAll('.theme-btn').forEach(btn => btn.classList.remove('active'));
+      const activeBtn = document.getElementById(`btn-${theme}`);
+      if (activeBtn) activeBtn.classList.add('active');
+      localStorage.setItem('kurdish_lib_theme', theme);
+    }
+
+    function showTab(tabName) {
+      document.getElementById('tabHome').style.display = tabName === 'home' ? 'block' : 'none';
+      document.getElementById('tabQuotes').style.display = tabName === 'quotes' ? 'block' : 'none';
+      document.getElementById('tabSettings').style.display = tabName === 'settings' ? 'block' : 'none';
+
+      document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+
+      if (tabName === 'home') {
+        document.getElementById('navHome').classList.add('active');
+      } else if (tabName === 'quotes') {
+        document.getElementById('navQuotes').classList.add('active');
+        renderAllQuotes();
+      } else if (tabName === 'settings') {
+        document.getElementById('navSettings').classList.add('active');
+      }
+    }
+
+    function renderAllQuotes() {
+      const container = document.getElementById('quotesContainer');
+      let count = 1;
+      let html = '';
+      books.forEach(b => {
+        if (b.quotes) {
+          b.quotes.forEach(q => {
+            html += `
+              <div class="quote-item">
+                <div><b>${count++}.</b> "${q.ckb}"</div>
+                <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">— کتێبی: ${b.title}</div>
+                <div class="quote-en">${q.en}</div>
+              </div>
+            `;
+          });
+        }
+      });
+      container.innerHTML = html || 'هیچ وتەیەک نەدۆزرایەوە.';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('kurdish_lib_theme') || 'dark';
+      setTheme(savedTheme);
+      renderBooks(books);
+    });
   </script>
 </body>
-  </html>
-  
+</html>
