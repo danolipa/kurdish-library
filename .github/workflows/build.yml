@@ -1,56 +1,873 @@
-name: Build Android APK
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>کتێبخانەی کوردی - وەشانی دەوڵەمەند</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
 
-on:
-  push:
-    branches: [ "main", "master" ]
-  workflow_dispatch:
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --border-color: #334155;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent-color: #38bdf8;
+      --quote-bg: #090d16;
+      --quote-text: #fde047;
+      --reader-font-size: 16px;
+      --reader-line-height: 1.7;
+    }
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+    body.theme-light {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --border-color: #e2e8f0;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --accent-color: #0284c7;
+      --quote-bg: #f1f5f9;
+      --quote-text: #854d0e;
+    }
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    body.theme-sepia {
+      --bg-color: #fbf0d9;
+      --card-bg: #f4e4c1;
+      --border-color: #e2d2ad;
+      --text-main: #4a3b32;
+      --text-muted: #786455;
+      --accent-color: #b45309;
+      --quote-bg: #ebd8b0;
+      --quote-text: #92400e;
+    }
 
-      - name: Set up Java JDK 17
-        uses: actions/setup-java@v4
-        with:
-          java-version: '17'
-          distribution: 'temurin'
+    body.theme-eink {
+      --bg-color: #ffffff;
+      --card-bg: #ffffff;
+      --border-color: #000000;
+      --text-main: #000000;
+      --text-muted: #333333;
+      --accent-color: #000000;
+      --quote-bg: #f0f0f0;
+      --quote-text: #000000;
+    }
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+      -webkit-user-select: none;
+      direction: rtl;
+    }
 
-      - name: Prepare Web Directory
-        run: |
-          mkdir -p www
-          cp index.html www/index.html || true
+    /* Header */
+    header {
+      background-color: var(--card-bg);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
 
-      - name: Install Dependencies
-        run: |
-          npm init -y
-          npm install @capacitor/core @capacitor/cli @capacitor/android
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-      - name: Sync Capacitor Android Project
-        run: |
-          npx cap init "KurdishLibrary" "com.kurdish.library.app" --web-dir "www" || true
-          if [ ! -d "android" ]; then
-            npx cap add android
-          fi
-          npx cap copy android
-          npx cap sync android
+    .brand-logo {
+      width: 38px;
+      height: 38px;
+      background: var(--accent-color);
+      color: #000;
+      font-weight: bold;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
 
-      - name: Build Android APK
-        run: |
-          cd android
-          chmod +x gradlew
-          ./gradlew assembleDebug --stacktrace
+    .brand-title {
+      font-size: 17px;
+      font-weight: bold;
+      color: var(--accent-color);
+    }
 
-      - name: Upload APK Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: KurdishLibrary-APK
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+    .theme-buttons {
+      display: flex;
+      gap: 3px;
+      background: var(--bg-color);
+      padding: 3px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+
+    .theme-btn {
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      padding: 5px 7px;
+      border-radius: 6px;
+      font-size: 11px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .theme-btn.active {
+      background: var(--accent-color);
+      color: #ffffff;
+    }
+
+    /* Main Container */
+    main {
+      flex: 1;
+      max-width: 680px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 16px;
+      padding-bottom: 85px;
+    }
+
+    /* Controls & Search */
+    .search-box {
+      margin-bottom: 12px;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      background-color: var(--card-bg);
+      color: var(--text-main);
+      font-size: 14px;
+      outline: none;
+    }
+
+    .category-pills {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+      scrollbar-width: none;
+    }
+
+    .category-pill {
+      white-space: nowrap;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .category-pill.active {
+      background: var(--accent-color);
+      color: #000;
+      font-weight: bold;
+      border-color: var(--accent-color);
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--accent-color);
+      margin-bottom: 12px;
+      border-right: 4px solid var(--accent-color);
+      padding-right: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Book Cards */
+    .book-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .book-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      padding: 16px;
+      border-radius: 14px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .book-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 6px;
+    }
+
+    .book-tag {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent-color);
+      font-weight: bold;
+    }
+
+    .fav-btn {
+      background: none;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      color: var(--text-muted);
+    }
+
+    .fav-btn.is-fav {
+      color: #ef4444;
+    }
+
+    .book-title {
+      font-size: 17px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .book-author {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .book-snippet {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Modal / Reader View */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 100;
+      padding: 12px;
+      overflow-y: auto;
+    }
+
+    .modal-overlay.active {
+      display: block;
+    }
+
+    .modal-content {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 20px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .reader-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .back-btn {
+      background: var(--border-color);
+      color: var(--text-main);
+      border: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .font-controls {
+      display: flex;
+      gap: 6px;
+    }
+
+    .font-btn {
+      background: var(--bg-color);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .modal-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 6px;
+      color: var(--accent-color);
+    }
+
+    .modal-author {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .reader-body {
+      font-size: var(--reader-font-size);
+      line-height: var(--reader-line-height);
+      color: var(--text-main);
+    }
+
+    .summary-section {
+      margin-bottom: 24px;
+    }
+
+    .summary-heading {
+      font-size: 17px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: var(--accent-color);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .summary-text {
+      margin-bottom: 12px;
+      text-align: justify;
+    }
+
+    .quote-box {
+      background-color: var(--quote-bg);
+      border: 1px solid var(--border-color);
+      padding: 14px;
+      border-radius: 12px;
+      margin-top: 12px;
+    }
+
+    .quote-item {
+      font-size: 14px;
+      color: var(--quote-text);
+      line-height: 1.7;
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px dashed var(--border-color);
+    }
+
+    .quote-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .quote-en {
+      font-size: 12px;
+      color: var(--text-muted);
+      direction: ltr;
+      text-align: left;
+      margin-top: 4px;
+    }
+
+    /* Settings Page Specifics */
+    .settings-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      padding: 16px;
+      border-radius: 12px;
+      margin-bottom: 14px;
+    }
+
+    .settings-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .settings-row:last-child {
+      border-bottom: none;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: var(--card-bg);
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      z-index: 40;
+    }
+
+    .nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 11px;
+      cursor: pointer;
+      gap: 3px;
+    }
+
+    .nav-item.active {
+      color: var(--accent-color);
+      font-weight: bold;
+    }
+
+    .nav-icon {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body class="theme-dark">
+
+  <!-- Header -->
+  <header>
+    <div class="brand">
+      <div class="brand-logo">کـ</div>
+      <div class="brand-title">کتێبخانەی کوردی</div>
+    </div>
+    <div class="theme-buttons">
+      <button onclick="setTheme('light')" id="btn-light" class="theme-btn">☀️ Light</button>
+      <button onclick="setTheme('dark')" id="btn-dark" class="theme-btn active">🌙 Dark</button>
+      <button onclick="setTheme('sepia')" id="btn-sepia" class="theme-btn">📜 Sepia</button>
+      <button onclick="setTheme('eink')" id="btn-eink" class="theme-btn">📖 E-Ink</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Search & Filters (Shown only on Home) -->
+    <div id="searchSection">
+      <div class="search-box">
+        <input type="text" id="searchInput" oninput="filterBooks()" placeholder="گەڕان بەدوای کتێب، نووسەر، یان وشەی کلیلی..." class="search-input">
+      </div>
+      <div class="category-pills">
+        <button onclick="filterCategory('all')" class="category-pill active" id="cat-all">هەموی</button>
+        <button onclick="filterCategory('خۆپەرەسەندن')" class="category-pill" id="cat-1">خۆپەرەسەندن</button>
+        <button onclick="filterCategory('فەلسەفە')" class="category-pill" id="cat-2">فەلسەفە</button>
+        <button onclick="filterCategory('دەروونناسی')" class="category-pill" id="cat-3">دەروونناسی</button>
+        <button onclick="filterCategory('کار و دارایی')" class="category-pill" id="cat-4">کار و دارایی</button>
+      </div>
+    </div>
+
+    <!-- Home Tab -->
+    <div id="tabHome">
+      <div class="section-title">
+        <span>کۆمەڵەی پوختەی کتێبەکان</span>
+        <span id="bookCount" style="font-size: 12px; color: var(--text-muted);"></span>
+      </div>
+      <div id="bookGrid" class="book-grid"></div>
+    </div>
+
+    <!-- Saved/Library Tab -->
+    <div id="tabLibrary" style="display: none;">
+      <div class="section-title">کتێبە نیشانکراوەکان (Bookmarks)</div>
+      <div id="favBookGrid" class="book-grid"></div>
+    </div>
+
+    <!-- Quotes Tab -->
+    <div id="tabQuotes" style="display: none;">
+      <div class="section-title">١٠ وتەی زێڕین و دیاری جیهانی</div>
+      <div id="quotesContainer" class="quote-box"></div>
+    </div>
+
+    <!-- Settings Tab -->
+    <div id="tabSettings" style="display: none;">
+      <div class="section-title">ڕێکخستنەکانی خوێنەر</div>
+      
+      <div class="settings-card">
+        <div class="settings-row">
+          <span>قەبارەی تێکستی خوێندنەوە</span>
+          <div class="font-controls">
+            <button onclick="adjustFontSize(-1)" class="font-btn">A-</button>
+            <span id="fontSizeDisplay" style="padding: 4px 8px; font-size: 13px;">16px</span>
+            <button onclick="adjustFontSize(1)" class="font-btn">A+</button>
+          </div>
+        </div>
+        <div class="settings-row">
+          <span>فاستبوونی بەرزی دێڕەکان</span>
+          <button onclick="toggleLineHeight()" class="back-btn" id="lhBtn">ئاسایی</button>
+        </div>
+      </div>
+
+      <div class="section-title">دەربارەی ئەپڵیکەیشن</div>
+      <div class="settings-card">
+        <div style="font-weight: bold; margin-bottom: 6px;">کتێبخانەی کوردی (Kurdish Library)</div>
+        <div style="font-size: 13px; color: var(--text-muted); line-height: 1.6;">
+          وەشانی: 2.0.0 (Advance Edition)<br>
+          تایبەتمەندکراو بۆ خوێندنەوەی پوختەی کتێبە جیهانییەکان بە زمانی کوردی بەبێ پێویستی بە ئینتەرنێت.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Reader Modal -->
+  <div id="readerModal" class="modal-overlay">
+    <div class="modal-content">
+      <div class="reader-toolbar">
+        <button onclick="closeModal()" class="back-btn">← بگەڕێوە</button>
+        <div class="font-controls">
+          <button onclick="adjustFontSize(-1)" class="font-btn">A-</button>
+          <button onclick="adjustFontSize(1)" class="font-btn">A+</button>
+        </div>
+      </div>
+      <div id="modalTitle" class="modal-title"></div>
+      <div id="modalAuthor" class="modal-author"></div>
+      <div id="modalBody" class="reader-body"></div>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <nav>
+    <button onclick="showTab('home')" id="navHome" class="nav-item active">
+      <span class="nav-icon">🏠</span>
+      <span>ماڵەوە</span>
+    </button>
+    <button onclick="showTab('library')" id="navLibrary" class="nav-item">
+      <span class="nav-icon">🔖</span>
+      <span>نیشانکراوەکان</span>
+    </button>
+    <button onclick="showTab('quotes')" id="navQuotes" class="nav-item">
+      <span class="nav-icon">💬</span>
+      <span>وتەکان</span>
+    </button>
+    <button onclick="showTab('settings')" id="navSettings" class="nav-item">
+      <span class="nav-icon">⚙️</span>
+      <span>ڕێکخستن</span>
+    </button>
+  </nav>
+
+  <script>
+    // Expanded Rich Database
+    const books = [
+      {
+        id: 1,
+        category: "خۆپەرەسەندن",
+        title: "ئادەتە بچووکەکان (Atomic Habits)",
+        author: "جەیمس کلێر | ساڵی ٢٠١٨",
+        snippet: "کتێبێکی بنەڕەتی لەسەر هێزی گۆڕانکارییە ١٪یەکانی ڕۆژانە. چۆن بە هەنگاوی بچووک ئەنجامی گەورە لە ژیانتدا دروست دەکەیت...",
+        summary: `
+          <div class="summary-section">
+            <div class="summary-heading">📍 ١. پێشەکی و بیرۆکەی سەرەکی</div>
+            <div class="summary-text">پوختەی سەرەکی کتێبی Atomic Habits ئەوەیە کە گۆڕانکارییە گەورەکان لە ژیاندا لە ئەنجامی بڕیارە دراماتیکییەکانەوە نایەن، بەڵکو لە کەڵەکەبوونی سەدان ڕەفتار و ئادەتی بچووکی ڕۆژانەوە دروست دەبن (تەنانەت ١٪ باشتربوون لە ڕۆژێکدا).</div>
+          </div>
+          <div class="summary-section">
+            <div class="summary-heading">🔑 ٢. یاسای چوار قۆناغیی دروستکردنی ئادەت</div>
+            <div class="summary-text">
+              <b>١. ئاماژە (Cue):</b> هاندەرێک کە مێشکت ئاگادار دەکاتەوە.<br>
+              <b>٢. ئارەزوو (Craving):</b> ئەو هێزەی پاڵت پێوە دەنێت بۆ جوڵە.<br>
+              <b>٣. وەڵامدانەوە (Response):</b> ئەنجامدانی خودی ئادەتەکە.<br>
+              <b>٤. پاداشت (Reward):</b> ئەو هەستە چێژبەخشەی کە مێشك فێر دەکات کردارەکە دووبارە بکاتەوە.
+            </div>
+          </div>
+          <div class="summary-section">
+            <div class="summary-heading">💡 ٣. گرنگترین وانەکان</div>
+            <div class="summary-text">
+              • <b>کێشەی ئامانجەکان:</b> سەرکەوتووان و دۆڕاوەکان هەردووکیان هەمان ئامانجیان هەیە! جیاوازییەکە لە <b>سیستەمی کارکردندایە</b>.<br>
+              • <b>بۆچوونی ناسنامەیی:</b> لە شوێنی ئەوەی بڵێیت "دەمەوێت کتێب بخوێنمەوە"، بڵێ "من خوێنەرم". کاتێک ناسنامەکەت گۆڕی، ڕەفتارەکانت بە شێوەیەکی خۆکارانە دەگۆڕێن.
+            </div>
+          </div>
+        `,
+        quotes: [
+          { ckb: "تۆ بەرز نابیتەوە بۆ ئاستی ئامانجەکانت، بەڵکو دادەبەزیت بۆ ئاستی سیستەمەکانت.", en: "You do not rise to the level of your goals. You fall to the level of your systems." },
+          { ckb: "گۆڕانکارییە بچووکەکان ئەنجامی گەورە دروست دەکەن.", en: "Changes that seem small and unimportant at first will compound into remarkable results." }
+        ]
+      },
+      {
+        id: 2,
+        category: "فەلسەفە",
+        title: "مرۆڤ لە دوای مانادا دەگەڕێت",
+        author: "ڤیکتۆر فرانکڵ | ساڵی ١٩٤٦",
+        snippet: "ئەزموونی تاڵی دەروونپزیشکێک لە سەربازگەکانی مەرگی نازیدا. چۆن مرۆڤ دەتوانێت لە ناخۆشترین بارودۆخدا مانا بۆ ژیانی بدۆزێتەوە...",
+        summary: `
+          <div class="summary-section">
+            <div class="summary-heading">📍 ١. تاقیکردنەوە لە ناو سەربازگەکانی مەرگدا</div>
+            <div class="summary-text">فرانکڵ لە ڕێگەی ئەزموونی خۆی لە سەربازگەکانی ئاوشڤیتز دەرسێکی گەورە بە جیهان دەبەخشێت: ئەو کەسانەی کە لە سەربازگەکاندا زەقبوونەوە و مانەوە، لێهاتووترین یان بەهێزترینەکان نەبوون، بەڵکو ئەو کەسانە بوون کە <b>هۆکارێکی ڕوونیان بۆ ژیان</b> هەبوو.</div>
+          </div>
+          <div class="summary-section">
+            <div class="summary-heading">🔑 ٢. سێ سەرچاوەکەی دۆزینەوەی مانا (Logotherapy)</div>
+            <div class="summary-text">
+              ١. <b>لە ڕێگەی کارکردن یان دروستکردن:</b> ئەنجامدانی کارێک یان پڕۆژەیەک کە بڕوات پێیەتی.<br>
+              ٢. <b>لە ڕێگەی ئەزموونکردنی شتێک یان ڕووبەڕووبوونەوەی کەسێک:</b> وەک خۆشەویستی و پەیوەندی کۆمەڵایەتی.<br>
+              ٣. <b>لە ڕێگەی هەڵوێستت بەرامبەر ئازاری نەبڕاوە:</b> کاتێک ناتوانین بارودۆخەکە بگۆڕین، ئازارەکە دەبێتە دەرفەتێک بۆ گەشەی ڕۆحی.
+            </div>
+          </div>
+        `,
+        quotes: [
+          { ckb: "ئەو کەسەی هۆکارێکی (بۆچی) هەیە بۆ ژیان، دەتوانێت بەرگەی هەر (چۆنێک) بگرێت.", en: "He who has a why to live can bear almost any how." },
+          { ckb: "دوایین ئازادیی مرۆڤ: هەڵبژاردنی هەڵوێستی خۆیە لە هەر بارودۆخێکدا.", en: "Everything can be taken from a man but one thing: the last of the human freedoms—to choose one's attitude in any given set of circumstances." }
+        ]
+      },
+      {
+        id: 3,
+        category: "کار و دارایی",
+        title: "باوکی دەوڵەمەند و باوکی هەژار (Rich Dad Poor Dad)",
+        author: "ڕۆبێرت کیۆساکی | ساڵی ١٩٩٧",
+        snippet: "تێگەیشتن لە جیاوازیی بیرکردنەوەی دەوڵەمەندەکان و چینەکانی تر بەرامبەر پارە، سەرمایە و قەرز...",
+        summary: `
+          <div class="summary-section">
+            <div class="summary-heading">📍 ١. جیاوازی بنەڕەتی دوو باوکەکە</div>
+            <div class="summary-text">باوکە زانستی و هەژارەکە دەیوت: "خوێندنی باش بکه تا کارێکی باش بدۆزیتەوە". باوکە دەوڵەمەندەکە دەیوت: "فێربە چۆن سیستەمێک دروست بکەیت کە پارە بۆ تۆ کار بکات".</div>
+          </div>
+          <div class="summary-section">
+            <div class="summary-heading">🔑 ٢. جیاوازی نێوان Asset و Liability</div>
+            <div class="summary-text">
+              • <b>Asset (سەرمایەی داهات هێن):</b> شتێکە کە پارە دەخاتە ناو گیرفانتەوە (وەک پشک، موڵکی کرێ، بزنس).<br>
+              • <b>Liability (قەرز/خەرجی):</b> شتێکە کە پارە لە گیرفانت دەردێنێت (وەک سەیارەی گرانبەها، قەرزی بەکاربردن).
+            </div>
+          </div>
+        `,
+        quotes: [
+          { ckb: "هەژارەکان و چینی ناوەڕاست بۆ پارە کار دەکەن، بەڵام دەوڵەمەندەکان وا دەکەن پارە بۆ ئەوان کار بکات.", en: "The poor and the middle class work for money. The rich have money work for them." }
+        ]
+      },
+      {
+        id: 4,
+        category: "دەروونناسی",
+        title: "کاری قووڵ (Deep Work)",
+        author: "کال نیوپۆرت | ساڵی ٢٠١٦",
+        snippet: "یاساکانی سەرکەوتنی تەرکیز لە جیهانێکی پڕ لە سەرلێشێوان و تۆڕە کۆمەڵایەتییەکاندا...",
+        summary: `
+          <div class="summary-section">
+            <div class="summary-heading">📍 ١. جیاوازی کاری قووڵ و کاری ڕووکەش</div>
+            <div class="summary-text">کاری قووڵ (Deep Work) بریتییە لە کارکردن لە دۆخێکی تەرکیزی بێ بڕانەوە و بێ تێکچوونی سەرنج. کاری ڕووکەش (Shallow Work) بریتییە لە وەڵامدانەوەی ئیمەیڵ، بەکارهێنانی تۆڕە کۆمەڵایەتییەکان و کارە لاوەکییەکان.</div>
+          </div>
+          <div class="summary-section">
+            <div class="summary-heading">🔑 ٢. یاساکانی کاری قووڵ</div>
+            <div class="summary-text">
+              ١. بە قووڵی کار بکە و کاتژمێری تایبەت بە بێ تەلەفۆن تەرخان بکە.<br>
+              ٢. بێزاری لەباوەش بگرە (خۆت ڕانەهێنە بەردەوام سەیری مۆبایل بکەیت کاتێک بێزار دەبیت).<br>
+              ٣. لە تۆڕە کۆمەڵایەتییەکان دووربکەوەرەوە یان بەکارهێنانیان کەم ببنەوە.
+            </div>
+          </div>
+        `,
+        quotes: [
+          { ckb: "توانای ئەنجامدانی کاری قووڵ ڕۆژ بە ڕۆژ دەگمەنتر دەبێت، بەوەش بەهای لە بازاڕدا بەرزتر دەبێتەوە.", en: "The ability to perform deep work is becoming increasingly rare at the exact same time it is becoming increasingly valuable in our economy." }
+        ]
+      }
+    ];
+
+    let currentCategory = 'all';
+    let favorites = JSON.parse(localStorage.getItem('kurdish_lib_favs') || '[]');
+    let currentFontSize = parseInt(localStorage.getItem('kurdish_lib_fontsize') || '16');
+
+    function renderBooks(list) {
+      const grid = document.getElementById('bookGrid');
+      grid.innerHTML = '';
+      document.getElementById('bookCount').innerText = `${list.length} کتێب`;
+
+      if (list.length === 0) {
+        grid.innerHTML = '<div style="color: var(--text-muted); padding: 30px 0; text-align: center;">هیچ کتێبێک نەدۆزرایەوە...</div>';
+        return;
+      }
+
+      list.forEach(book => {
+        const isFav = favorites.includes(book.id);
+        const card = document.createElement('div');
+        card.className = 'book-card';
+        card.innerHTML = `
+          <div class="book-header">
+            <span class="book-tag">${book.category}</span>
+            <button onclick="toggleFav(event, ${book.id})" class="fav-btn ${isFav ? 'is-fav' : ''}">
+              ${isFav ? '♥' : '♡'}
+            </button>
+          </div>
+          <div onclick="openSummary(${book.id})">
+            <div class="book-title">${book.title}</div>
+            <div class="book-author">${book.author}</div>
+            <div class="book-snippet">${book.snippet}</div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function renderFavorites() {
+      const grid = document.getElementById('favBookGrid');
+      grid.innerHTML = '';
+      const favBooks = books.filter(b => favorites.includes(b.id));
+
+      if (favBooks.length === 0) {
+        grid.innerHTML = '<div style="color: var(--text-muted); padding: 30px 0; text-align: center;">هیچ کتێبێک نیشان نەکراوە. لە سەر پەڕەی سەرەکی کلیک لەسەر دڵەکە (♡) بکە.</div>';
+        return;
+      }
+
+      favBooks.forEach(book => {
+        const card = document.createElement('div');
+        card.className = 'book-card';
+        card.innerHTML = `
+          <div class="book-header">
+            <span class="book-tag">${book.category}</span>
+            <button onclick="toggleFav(event, ${book.id})" class="fav-btn is-fav">♥</button>
+          </div>
+          <div onclick="openSummary(${book.id})">
+            <div class="book-title">${book.title}</div>
+            <div class="book-author">${book.author}</div>
+            <div class="book-snippet">${book.snippet}</div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function toggleFav(e, id) {
+      e.stopPropagation();
+      if (favorites.includes(id)) {
+        favorites = favorites.filter(favId => favId !== id);
+      } else {
+        favorites.push(id);
+      }
+      localStorage.setItem('kurdish_lib_favs', JSON.stringify(favorites));
+      filterBooks();
+      renderFavorites();
+    }
+
+    function filterCategory(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.category-pill').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      filterBooks();
+    }
+
+    function filterBooks() {
+      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+      const filtered = books.filter(b => {
+        const matchesCat = currentCategory === 'all' || b.category === currentCategory;
+        const matchesSearch = b.title.toLowerCase().includes(query) || 
+                              b.author.toLowerCase().includes(query) || 
+                              b.snippet.toLowerCase().includes(query);
+        return matchesCat && matchesSearch;
+      });
+      renderBooks(filtered);
+    }
+
+    function openSummary(id) {
+      const book = books.find(b => b.id === id);
+      if (!book) return;
+
+      document.getElementById('modalTitle').innerText = book.title;
+      document.getElementById('modalAuthor').innerText = book.author;
+
+      let quotesHTML = '';
+      if (book.quotes && book.quotes.length > 0) {
+        quotesHTML = `
+          <div class="summary-section">
+            <div class="summary-heading">💬 وتە دیار و درەوشاوەکانی ئەم کتێبە</div>
+            <div class="quote-box">
+              ${book.quotes.map((q, i) => `
+                <div class="quote-item">
+                  <div><b>${i + 1}.</b> "${q.ckb}"</div>
+                  <div class="quote-en">${q.en}</div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      }
+
+      document.getElementById('modalBody').innerHTML = book.summary + quotesHTML;
+      document.getElementById('readerModal').classList.add('active');
+    }
+
+    function closeModal() {
+      document.getElementById('readerModal').classList.remove('active');
+    }
+
+    function adjustFontSize(delta) {
+      currentFontSize = Math.max(13, Math.min(24, currentFontSize + delta));
+      document.documentElement.style.setProperty('--reader-font-size', `${currentFontSize}px`);
+      document.getElementById('fontSizeDisplay').innerText = `${currentFontSize}px`;
+      localStorage.setItem('kurdish_lib_fontsize', currentFontSize);
+    }
+
+    function setTheme(theme) {
+      document.body.className = `theme-${theme}`;
+      document.querySelectorAll('.theme-btn').forEach(btn => btn.classList.remove('active'));
+      const activeBtn = document.getElementById(`btn-${theme}`);
+      if (activeBtn) activeBtn.classList.add('active');
+      localStorage.setItem('kurdish_lib_theme', theme);
+    }
+
+    function showTab(tabName) {
+      document.getElementById('tabHome').style.display = tabName === 'home' ? 'block' : 'none';
+      document.getElementById('tabLibrary').style.display = tabName === 'library' ? 'block' : 'none';
+      document.getElementById('tabQuotes').style.display = tabName === 'quotes' ? 'block' : 'none';
+      document.getElementById('tabSettings').style.display = tabName === 'settings' ? 'block' : 'none';
+
+      document.getElementById('searchSection').style.display = tabName === 'home' ? 'block' : 'none';
+
+      document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+
+      if (tabName === 'home') {
+        document.getElementById('navHome').classList.add('active');
+      } else if (tabName === 'library') {
+        document.getElementById('navLibrary').classList.add('active');
+        renderFavorites();
+      } else if (tabName === 'quotes') {
+        document.getElementById('navQuotes').classList.add('active');
+        renderAllQuotes();
+      } else if (tabName === 'settings') {
+        document.getElementById('navSettings').classList.add('active');
+      }
+    }
+
+    function renderAllQuotes() {
+      const container = document.getElementById('quotesContainer');
+      let count = 1;
+      let html = '';
+      books.forEach(b => {
+        if (b.quotes) {
+          b.quotes.forEach(q => {
+            html += `
+              <div class="quote-item">
+                <div><b>${count++}.</b> "${q.ckb}"</div>
+                <div style="font-size: 11px; color: var(--text-muted); margin-top: 3px;">— کتێبی: ${b.title}</div>
+                <div class="quote-en">${q.en}</div>
+              </div>
+            `;
+          });
+        }
+      });
+      container.innerHTML = html;
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('kurdish_lib_theme') || 'dark';
+      setTheme(savedTheme);
+      adjustFontSize(0);
+      renderBooks(books);
+    });
+  </script>
+</body>
+</html>
