@@ -1,5 +1,6 @@
 {
-  "appId": "com.kurdishlibrary.app",
+  "appId": "com.kurdish.library.app",
   "appName": "کتێبخانەی کوردی",
-  "webDir": "dist"
+  "webDir": "www",
+  "bundledWebRuntime": false
 }
