@@ -1,0 +1,10 @@
+<!-- public/assets/logo.svg -->
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="112" fill="#0F172A"/>
+  <!-- Open Book Base -->
+  <path d="M112 176C112 162.745 122.745 152 136 152H232C245.255 152 256 162.745 256 176V360C256 346.745 245.255 336 232 336H136C122.745 336 112 346.745 112 360V176Z" fill="#38BDF8"/>
+  <path d="M256 176C256 162.745 266.745 152 280 152H376C389.255 152 400 162.745 400 176V360C400 346.745 389.255 336 376 336H280C266.745 336 256 346.745 256 360V176Z" fill="#0EA5E9"/>
+  <!-- Kurdish Sun Emblem in Center -->
+  <circle cx="256" cy="220" r="36" fill="#F59E0B"/>
+  <path d="M256 168V152M256 288V272M308 220H324M188 220H204M293 183L304 172M208 257L219 246M293 257L304 268M208 183L219 194" stroke="#F59E0B" stroke-width="6" stroke-linecap="round"/>
+</svg>
