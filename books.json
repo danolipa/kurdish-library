@@ -2,169 +2,1401 @@
   {
     "id": 1,
     "category": "خۆپەرەسەندن",
-    "title": "ئادەتە بچووکەکان (Atomic Habits)",
-    "author": "جەیمس کلێر | ساڵی ٢٠١٨",
-    "snippet": "پوختەیەکی زۆر قووڵ و تێروتەسەل لەسەر هێزی گۆڕانکارییە ١٪یەکانی ڕۆژانە...",
-    "summary": "<div class='summary-section'><div class='summary-heading'>📍 ١. پێشەکی و بیرۆکەی سەرەکی</div><div class='summary-text'>کتێبی Atomic Habits لە نووسینی جەیمس کلێر یەکێکە لە کاریگەرترین کتێبەکانی باری خۆپەرەسەندن. پەیامی سەرەکی کتێبەکە ئەوەیە کە گۆڕانکارییە دراماتیکییەکان بەرهەمی کردارە بچووک و ڕۆژانەییەکانن کە بە شێوەیەکی بەردەوام دەکرێن. ئەگەر تۆ ڕۆژانە تەنها ١٪ لە شتێکدا باشتر ببیت، دوای ساڵێک بە نزیکەی ٣٧ جار باشتر دەبیت.</div></div><div class='summary-section'><div class='summary-heading'>🔑 ٢. چوار یاسای گۆڕینی ڕەفتار</div><div class='summary-text'>جەیمس کلێر ڕوونی دەکاتەوە کە هەر ئادەتێک لە چوار قۆناغ پێکهاتووە: ئاماژە (Cue)، ئارەزوو (Craving)، وەڵامدانەوە (Response)، و پاداشت (Reward). بۆ دروستکردنی ئادەتی باش:<br>١. <b>ڕوونی بکەرەوە:</b> ئاماژەکان لەبەرچاو دابنێ.<br>٢. <b>ڕاکێشەری بکە:</b> ئارەزووەکان بە پاداشت ببەستەرەوە.<br>٣. <b>ئاسانی بکە:</b> کۆسپەکان کەم بکەرەوە.<br>٤. <b>چێژبەخشی بکە:</b> ڕاستەوخۆ هەست بە سەرکەوتن بکە.</div></div>",
+    "title": "بیر بکەرەوە و دەوڵەمەند ببە (Think and Grow Rich)",
+    "author": "ناپۆلیۆن هێڵ | ساڵی ١٩٣٧",
+    "snippet": "پوختەی یاساکانی سەرکەوتن و دەوڵەمەندبوون لە ڕێگەی هۆشیاری و ئامانجی ڕوونەوە...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ئامانجی ڕوون</div><div class=\"summary-text\">دیاریکردنی مەبەست و سووربوون لەسەر بەدیهێنانی بە پاڵنەری ناوەکی.</div></div><div class=\"summary-section\"><div class=\"summary-heading\">🔑 ٢. مێشکی هاوکار</div><div class=\"summary-text\">کۆبوونەوەی کەسانی خاوەن بیرۆکەی هاوبەش بۆ خێراکردنی پرۆسەی سەرکەوتن.</div></div>",
     "quotes": [
-      { "ckb": "تۆ بەرز نابیتەوە بۆ ئاستی ئامانجەکانت، بەڵکو دادەبەزیت بۆ ئاستی سیستەمەکانت.", "en": "You do not rise to the level of your goals. You fall to the level of your systems." },
-      { "ckb": "گۆڕانکارییە بچووکەکان ئەنجامی گەورە دروست دەکەن.", "en": "Changes that seem small and unimportant at first will compound into remarkable results." }
+      {
+        "ckb": "هەموو ئەوەی مێشکی مرۆڤ بیری لێبکاتەوە و باوەڕی پێبکات، دەتوانێت بەدەستی بهێنێت.",
+        "en": "Whatever the mind of man can conceive and believe, it can achieve."
+      }
     ]
   },
   {
     "id": 2,
-    "category": "فەلسەفە",
-    "title": "مرۆڤ لە دوای مانادا دەگەڕێت",
-    "author": "ڤیکتۆر فرانکڵ | ساڵی ١٩٤٦",
-    "snippet": "ئەزموونی دەروونپزیشکێک لە سەربازگەکانی مەرگی نازیدا و دۆزینەوەی مانای ژیان...",
-    "summary": "<div class='summary-section'><div class='summary-heading'>📍 ١. تاقیکردنەوە لە ناو سەربازگەکانی مەرگدا</div><div class='summary-text'>ڤیکتۆر فرانکڵ کە دەروونپزیشکێکی نەمساوی بوو، ئەزموونی تاڵی خۆی لە سەربازگەکانی ئاوشڤیتز تۆمار دەکات. ئەو تێبینی کرد کە ئەو زیندانییانەی خاوەنی هۆکارێک یان ئامانجێک بوون لە ژیاندا، شانیان دایە بەر سەختترین ئازارەکان و زەقبوونەوە.</div></div>",
+    "category": "پەیوەندییەکان",
+    "title": "چۆن هاوڕێ پەیدا بکەیت (How to Win Friends)",
+    "author": "دێڵ کارنێگی | ساڵی ١٩٣٦",
+    "snippet": "هونەری مامەڵەکردن لەگەڵ خەڵک و دروستکردنی کاریگەری ئەرێنی...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. بایەخدانی ڕاستەقینە</div><div class=\"summary-text\">گرنگیدان بە خەڵکی تر بەبێ چاوەڕوانی بەرژەوەندی، کلیلی دروستکردنی پەیوەندی بەهێزە.</div></div>",
     "quotes": [
-      { "ckb": "ئەو کەسەی هۆکارێکی هەیە بۆ ژیان، دەتوانێت بەرگەی هەر چۆنێک بگرێت.", "en": "He who has a why to live can bear almost any how." }
+      {
+        "ckb": "تۆ دەتوانیت لە ماوەی دوو مانگدا هاوڕێی زیاتر پەیدا بکەیت بەوەی گرنگی بە خەڵکی تر بدەیت...",
+        "en": "You can make more friends in two months by becoming interested in other people..."
+      }
     ]
   },
   {
     "id": 3,
-    "category": "کار و دارایی",
-    "title": "باوکی دەوڵەمەند و باوکی هەژار",
-    "author": "ڕۆبێرت کیۆساکی | ساڵی ١٩٩٧",
-    "snippet": "وانەکانی زیرەکی دارایی، جیاوازی سەرمایە و قەرز، و ڕاهێنانی مێشک...",
-    "summary": "<div class='summary-section'><div class='summary-heading'>📍 ١. جیاوازی تێگەیشتن لە پارە</div><div class='summary-text'>کتابەکە بەراوردی شێوازی بیرکردنەوەی دوو باوک دەکات: باوکی بڕوانامەدار بەڵام هەژار، و باوکی ملیۆنێر. باوکە هەژارەکە جەختی لەسەر کارکردن بۆ پارە دەکردەوە، بەڵام باوکە دەوڵەمەندەکە فێری کردن چۆن وا بکەن پارە بۆ ئەوان کار بکات.</div></div>",
+    "category": "فەلسەفە و هۆشیاری",
+    "title": "هێزی ساتی ئێستا (The Power of Now)",
+    "author": "ئێکهارت تۆلی | ساڵی ١٩٩٧",
+    "snippet": "ڕزگاربوون لە زیندانی مێشک و ژیان لە ساتی حازردا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ژیان لە ساتی ئێستادا</div><div class=\"summary-text\">ڕزگاربوون لە نیگەرانییەکانی ڕابردوو و داهاتوو و چێژوەرگرتن لە ساتی حازر.</div></div>",
     "quotes": [
-      { "ckb": "دەوڵەمەندەکان سەرمایە (Asset) دەکڕن، هەژارەکان خەرجی (Liability) دەکڕن.", "en": "The rich buy assets. The poor buy liabilities." }
+      {
+        "ckb": "ساتی ئێستا گرنگترین شتە کە هەتبێت.",
+        "en": "Always say 'yes' to the present moment."
+      }
     ]
   },
   {
     "id": 4,
-    "category": "فەلسەفە",
-    "title": "زەوێکی نوێ (A New Earth)",
-    "author": "ئێکهارت تۆل | ٢٠٠٨",
-    "snippet": "هۆکاری ئازارەکانی مرۆڤایەتی «خودی»یە — ناسینە بە بیر، ماددە و هەستەکانەوە. ئاسنی نوێ لە هۆشیاری نوێوە دەست پێدەکات...",
-    "summary": "<div class='summary-section'><div class='summary-heading'>📍 ١. نەخۆشی هاوبەشەکەمان</div><div class='summary-text'>تۆل دەڵێت مرۆڤایەتی نەخۆشییەکی بۆماوەیی هەڵگرتووە کە ڕەگەکەی ترس، تامەزرۆیی و حەزی دەسەڵاتە. ئایینە گەورەکان ناویان ناوە: هیندۆیزم پێی دەڵێت «مایا» (پەردەی خورافە)، بوودیزم «دووکخا» (ئازاردان)، و مەسیحییەت «گوناه». هەنگاوی یەکەم ناسینی شێواویی خۆمانە — چونکە ناسینی شێواویی، دەستپێکی چاکبوونەوە و ژیانی بەعقڵییە.</div></div><div class='summary-section'><div class='summary-heading'>🔑 ٢. خودی (ئیگۆ) کێشەکەیە</div><div class='summary-text'>خودی هیچی تر نییە جگە لە ناسینەوە بە شێوەکان: بیر، ماددە و هەست. کاتێک خۆت تەنها لە بیرەکانت دەناسیتەوە، لە سەرچاوە جیای دەبیتەوە و ئازار دروست دەبێت. زۆربەی ئازارەکانمان لە وشەی «ئەمەم»دا شاراونەتەوە: ئەمەم ئۆتۆمبێڵ، ئەمەم ماڵ، ئەمەم ناوبانگ... بەڵکو تۆ گەورەتریت لە هەموو ڕۆڵێک کە دەیگێڕیت.</div></div><div class='summary-section'><div class='summary-heading'>🌱 ٣. چارەسەرەکە: یەک لەگەڵ ژیان</div><div class='summary-text'>هەستە نەڕوونکراوەکان لە «جەستەی ئازار»دا کۆدەبنەوە؛ چارەسەرەکە پەسەندکردنی ئەوەیە کە هەیە. ئازار مەبەستێکی پیرۆزی هەیە: گەشەی هۆشیاری و سووتاندنی خودی. نهێنی هونەری ژیان لە سێ وشەدایە: «یەک لەگەڵ ژیان». و «ڕۆحانیت» بە دۆخی هۆشیاریت دەزانرێت نەک بە باوەڕەکانت — ئەوەی چۆن مامەڵە دەکەیت گرنگە، نەک ئەوەی چی باوەڕت پێیە.</div></div>",
+    "category": "ئابووری و دارایی",
+    "title": "باوکی دەوڵەمەند، باوکی هەژار (Rich Dad Poor Dad)",
+    "author": "رۆبێرت کیۆساکی | ساڵی ١٩٩٧",
+    "snippet": "وانەکانی زیرەکی دارایی و جیاوازی سەرمایە و قەرز...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. سەرمایە و خەرجی</div><div class=\"summary-text\">فێربوونی چۆنیەتی واکردن کە پارە بۆ تۆ کار بکات نەک تۆ بۆ پارە.</div></div>",
     "quotes": [
-      { "ckb": "«ئاسنی نوێ» بریتییە لە دەرکەوتنی دۆخێکی گۆڕاوی هۆشیاری مرۆڤ، و «زەوێکی نوێ»یش ئاوێنەکەیەتی لە جیهانی ماددیدا.", "en": "A new heaven is the emergence of a transformed state of human consciousness, and a new earth is its reflection in the physical realm." },
-      { "ckb": "ئەوەی چەندە «ڕۆحانی» بیت هیچ پەیوەندییەکی بە باوەڕەکانتەوە نییە، بەڵکو هەموو شتێک بە دۆخی هۆشیاریتەوەیە.", "en": "How 'spiritual' you are has nothing to do with what you believe but everything to do with your state of consciousness." },
-      { "ckb": "هۆکاری سەرەکیی نائومێدی هەرگیز بارودۆخەکە نییە، بەڵکو بیرەکانتن دەربارەی بارودۆخەکە.", "en": "The primary cause of unhappiness is never the situation but your thoughts about the situation." },
-      { "ckb": "ئەم کتێبە دەربارەی تۆیە. یان دۆخی هۆشیاریت دەگۆڕێت یان بێ مانگ دەبێت.", "en": "This book is about you. It will change your state of consciousness or it will be meaningless." }
+      {
+        "ckb": "دەوڵەمەندەکان سەرمایە دەکڕن، هەژارەکان خەرجی دەکڕن.",
+        "en": "The rich buy assets. The poor buy liabilities."
+      }
     ]
   },
   {
     "id": 5,
     "category": "خۆپەرەسەندن",
-    "title": "داوا بکە و دەدرێت (Ask and It Is Given)",
-    "author": "ئێستەر و جێری هیکس | ٢٠٠٤",
-    "snippet": "یاسای ڕاکێشان: هەموو بیرۆکەیەک لەرینەوەیەکە و هاوتای خۆی ڕادەکێشێت — وەک ڕادیۆیەک کە بۆ فرێکوێنسی خواستەکانت ڕێکدەخرێت...",
-    "summary": "<div class='summary-section'><div class='summary-heading'>📍 ١. یاسای ڕاکێشان</div><div class='summary-text'>هەموو بیرۆکەیەک دەلەرێتەوە و سیگناڵێک دەڕووشێنێت، و سیگناڵی هاوتا بۆ خۆی ڕادەکێشێت — «ئەوەی لە خۆی دەچێت، خۆی ڕادەکێشرێت». وەک ڕادیۆیەک: ئەگەر بەدوای خۆشەویستی و دەوڵەمەندیدا بگەڕێیت، دەبێت بۆ فرێکوێنسی خۆشەویستی و دەوڵەمەندی ڕێک بکەویت، نەک بۆ فرێکوێنسی توڕەیی و سکاڵا.</div></div><div class='summary-section'><div class='summary-heading'>🔑 ٢. هەستەکان پێوانەن</div><div class='summary-text'>هەستی نەرێنی وەک پێوانەی سووتەمەنیی بەتاڵە: کاتێک باکییەکە بەتاڵ دەبێت، ئیعتراز لە ئامرازەکە ناکەیت — سووتەمەنی زیاتر دەخەیتە ناوەوە! هەمان شت بۆ هەستەکان: هەستی نائومێدی ئاماژەیە بۆ دووری لە وزەی سەرچاوە. چارەسەرەکە هەڵبژاردنی بیرۆکەی باشترە: سوپاسنان، جوڵە، مۆسیقا و هەر شتێک «باکییەکەت» پڕ بکاتەوە. سوپاسنان نزیکترین لەرینەوەیە بە وزەی سەرچاوە.</div></div><div class='summary-section'><div class='summary-heading'>🚀 ٣. کارت: دیاری بکە چی دەوێت</div><div class='summary-text'>پرسیاری یەکەمی کارە نوێت: «چیت دەوێت؟» لە ناو مشتومڕێکدا لە خۆت بپرسە «چیت دەوێت ئێستا؟» — وەڵامەکە هەرگیز «دەمەوێت مشتومڕ بکەم» نییە! ئەگەر توانای خەیاڵکردنی شتێک هەبێت، گەردوون سەرچاوەی تەواوکردنی هەیە. لە ٢٢ ڕەوتە کارەکەدا دوو دانەی باشتر: «مەبەستی بەشەکان» (هەر بەشێکی ڕۆژت مەبەستێکی ڕوونی بۆ دابنێ) و «سیناریۆ نووسین» (ژیانی خەونەکانت وەک سیناریۆ بنووسە و یاری پێ بکە).</div></div>",
+    "title": "کاریگەری ئاوێتە (The Compound Effect)",
+    "author": "دارێن هاردی | ساڵی ٢٠١٠",
+    "snippet": "هێزی هەنگاوە بچووکە ڕۆژانەکان لە دروستکردنی ئەنجامی گەورەدا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. هەنگاوی بچووک</div><div class=\"summary-text\">بڕیارە بچووکە ڕۆژانەکان بە تێپەڕبوونی کات ئەنجامی سەرنجڕاکێش دروست دەکەن.</div></div>",
     "quotes": [
-      { "ckb": "هیچ شتێک نییە کە نەتوانیت بیت، بیکەیت یان هەیبێت.", "en": "There is nothing that you cannot be, do, or have." },
-      { "ckb": "ئەوەی لە خۆی دەچێت، خۆی ڕادەکێشرێت.", "en": "That which is like unto itself is drawn." },
-      { "ckb": "ئەگەر توانای خەیاڵکردنی هەبێت، یان بیرکردنەوەی لێ بکەیت، ئەم گەردوونە توانا و سەرچاوەکانی هەیە بە تەواوی بۆت دەیگەیەنێت.", "en": "If you have the ability to imagine it, or even to think about it, this Universe has the ability and the resources to deliver it fully unto you." }
+      {
+        "ckb": "بڕیارە بچووکەکانت چارەنووست دیاری دەکەن.",
+        "en": "Small, smart choices + consistency + time = radical difference."
+      }
     ]
   },
   {
     "id": 6,
-    "category": "فەلسەفە",
-    "title": "مێشکی گەورە · دڵی گەورە (Big Mind · Big Heart)",
-    "author": "گێنپۆ ڕۆشی | ٢٠٠٧",
-    "snippet": "لە ناخماندا دەنگ و لایەنی بێشمار هەن، وەک کۆمپانیایەک کە هیچ کرێکارێک نازانێت دەستەبەری چییە! پرۆسەی «مێشکی گەورە» ڕێگایەکە بۆ ڕێکخستنیان...",
-    "summary": "<div class='summary-section'><div class='summary-heading'>📍 ١. کۆمپانیای شێواو</div><div class='summary-text'>مامۆستای زێن، گێنپۆ ڕۆشی، وێنەیەکی بەسوود دەکێشێت: خەیاڵی کۆمپانیایەک بکە کە کرێکارەکانی هەموویان بە چاو دروستکراون و هیچیان نازانێت دەستەبەری چییە و کێ بەڕێوەبەرە! لە ناخماندا هەمان شت ڕوودەدات — دەنگ و لایەنی بێشمار هەیە. پرۆسەی «مێشکی گەورە» (زێن + دیالۆگی دەنگ) ڕێگایەکە بۆ چاوپێکەوتن لەگەڵ هەر دەنگێک و ڕوونکردنەوەی ڕۆڵەکەی. هەر دەنگێک ژیریی خۆی هەیە؛ ڕەتکردنەوەی هەریەکێکیان کێشە دروست دەکات.</div></div><div class='summary-section'><div class='summary-heading'>🔑 ٢. ڕای دروست و ئەسپینە گیراوەکان</div><div class='summary-text'>«ڕای دروست» ئەوەیە بزانیت هیچ ڕایەک تەواو نییە — وەک شەش کوێرەکە کە هەر یەکێکیان بەشێکی فیلەکەی دەستکرد و هەموویان دڵنیا بوون لەوەی ١٠٠٪ ڕاست دەکەن! «دووکخا» واتە ئەسپینێک کە ناوسەرەکەی ناجوڵێت (گیراوە)؛ «سوکخا» ئازادکراوەکەیەتی. فێری گۆڕینی ڕوانگە بە — تەنانەت لە ناو مشتومڕیشدا: ساتێک ڕوانگەی ئەوی تر بینیت، ئازاد دەبیت.</div></div><div class='summary-section'><div class='summary-heading'>🌱 ٣. پەرستگای بێ دیوار</div><div class='summary-text'>ژیان خۆی پەرستگایە — هەر ساتێک فەرصەتی ڕاهێنانە: لە شتنانی دەستشۆرداوە تا ڕاوەستان لە ترافیکدا. هاودڵی تەواو هەم نەرم و پاڵپشتییە و هەم بڕیاردەر و بڕوجمەل — هەردووکیان پێویستن (وەک چیرۆکی ئەسپەکان). ئامانجیش مرۆڤێکی یەکخراوی ئازاد-کارایە کە دەڵێت: من بەرزبوونەوەم لە هەموو لایەنەکان، هیچ شتێکم نەگیراوە.</div></div>",
+    "category": "کار و بەرهەمداری",
+    "title": "هەفتەی کارکردنی ٤ کاتژمێری (The 4-Hour Workweek)",
+    "author": "تیم فێریس | ساڵی ٢٠٠٧",
+    "snippet": "دابەشکردنی کات و پێکهێنانی داهاتی ئۆتۆماتیکی...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. بەرهەمداری</div><div class=\"summary-text\">تەرکیزکردن لەسەر کاری ڕاستەقینە و دوورکەوتنەوە لە قەرەباڵغی ناپێویست.</div></div>",
     "quotes": [
-      { "ckb": "لە ڕاستیدا ژمارەیەکی بێسنوور لە ڕوانگە هەیە، بەڵام ئێمە وەک ئەوە مامەڵە دەکەین کە تەنها یەک هەیە.", "en": "In reality, there are an infinite number of perspectives, but we act as if there were only one." },
-      { "ckb": "دووکخا واتە ئەسپینێک کە ناوسەرەکەی ناجوڵێت... ئازادکردنی ئەسپینەکە واتە لیبرەیشن و نیڕڤانا.", "en": "Dukkha literally means a wheel whose hub doesn't move... What Buddha discovered and taught was to free up the wheel. That means liberation, nirvana." },
-      { "ckb": "لەبیرم بێتەوە کە پەیوەستبوون ئازاردەست دروست دەکات — و تەنانەت پەیوەست نەبوونیش نەبم بە نەپەیوەستکردنەوە.", "en": "I remember that clinging creates suffering, and not to be attached even to non attachment." },
-      { "ckb": "دەتوانیت خەیاڵی جیهانێک بکەیت کە هەمووان تێیدا ئازاد، خۆشبەخت و خۆشحاڵ بوون و هەمووان لە بەخشندەییەوە دەیانبەخشین؟", "en": "Can you imagine a world where everybody was free, happy and joyful, where everybody came from a place of generosity?" }
+      {
+        "ckb": "خەرجکردنی پارە بۆ کڕینی کات باشترین وەبەرهەنانە.",
+        "en": "Focus on being productive instead of busy."
+      }
     ]
   },
   {
     "id": 7,
-    "category": "خۆپەرەسەندن",
-    "title": "شارەزایی جەستە و مێشک (Body Mind Mastery)",
-    "author": "دان میلمان | ١٩٩٩",
-    "snippet": "تۆ یەکەیەکی گەرم و جوڵاوی تەواوی و لە کۆی بەشەکانت گەورەترە — بە ڕاهێنان، جەستە و مێشک و سۆزەکانت یەکدەخەیت و ژیانت شێوە دەدەیت...",
-    "summary": "<div class='summary-section'><div class='summary-heading'>📍 ١. وەک منداڵ فێربە</div><div class='summary-text'>منداڵان بەبێ ڕەخنە لە خۆیان ڕۆیشتن و قسەکردن فێر دەبن — هەر دەکەون و هەر ڕاهێنان دەکەن. ئەگەر بە خۆمان وەک گەورەکان مامەڵە بکەین، هەرگیز فێری ڕۆیشتن نەدەبووین! ترسی شکست بازنەیەکی خراپ دروست دەکات؛ چارەسەرەکە ئاشت بوونە لەگەڵ شکست — وەک هاوڕێیەکی کۆن. پاڵەوانە گەورەکان هەموویان زۆر جار شکستیان هێناوە.</div></div><div class='summary-section'><div class='summary-heading'>🔑 ٢. ساتی ڕاستی ئێستایە</div><div class='summary-text'>«ئازادی لە خاڵاندنی مێشک یەکسانە بە هێز». ساتی ڕاستی تەنها یاری پاڵەوانێتی نییە — هەر ساتێک فەرصەتێکە بۆ ئامادەبوونی تەواو. هەستەکان وەک هەور دێن و دەڕۆن: ناکۆنترۆڵبکەیت، بەڵام کردارەکانت لە دەستدان. بە ویست خۆت بنووژێنەوە، نەک بە حەزی کارکردن — چونکە حەز دێت و دەڕوات، بەڵام ویست هەمیشە لەبەردەستدایە.</div></div><div class='summary-section'><div class='summary-heading'>🌱 ٣. یاسای گونجان و عادەتەکان</div><div class='summary-text'>جەستە و مێشک بە هێواشی شێوەی عادەتە ڕۆژانەکانت وەردەگرن. بەردەامی لەسەر بنەماکان لە ئەشتقامی کارکردندا گرنگترە: ١٥ خولەک ڕۆژانە باشترە لە دوو کاتژمێر هەفتەی جارێک. عادەتی نوێ لە ٣ هەفتە تا ٦ مانگ دەخایەنێت — بۆیە بەرسیارێتییەکەت «نەگونجاو» (non-negotiable) بکە. و لە کۆتاییدا: شارەزای یەک هونەر هەمووی شارەزا کردووە چونکە خۆی شارەزا کردووە — شارەزایان هەموو شوێنێک دەدرەوشێن.</div></div>",
+    "category": "هونەر و داهێنان",
+    "title": "جەنگی هونەر (The War of Art)",
+    "author": "ستێڤن پرێسفیلد | ساڵی ٢٠٠٢",
+    "snippet": "شکاندنی بەربەستی ناوەکی و ڕەفتارکردن وەک پیشەگەر...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. بەربەستی ناوەکی</div><div class=\"summary-text\">ناسینەوە و تێپەڕاندنی ئەو دەنگە ناوەکییەی ڕێگری لە داهێنان دەکات.</div></div>",
     "quotes": [
-      { "ckb": "ئازادی لە خاڵاندنی مێشک یەکسانە بە هێز.", "en": "Freedom from mental distraction equals power." },
-      { "ckb": "بەختەوەرە منداڵان لە ڕەخنەی خود پاکن؛ تەنها ڕاهێنان دەکەن.", "en": "Fortunately, babies are free of self-criticism. They just keep practicing." },
-      { "ckb": "جەستەت شێوەگۆڕە؛ بە عادەتە ڕۆژانەکانی خواردن و ڕاهێنان بە درێژایی کات شێوەی پێدەدەیت.", "en": "Your body is malleable; you can sculpt it over time with daily habits of diet and exercise." },
-      { "ckb": "شارەزایان هەموو شوێنێک دەدرەوشێن.", "en": "The masters shine everywhere." }
+      {
+        "ckb": "هەرچی بەربەست گەورەتر بێت، سەرکەوتنەکەش گەورەتر دەبێت.",
+        "en": "The more resistance you experience, the more important your unmanifested art is."
+      }
     ]
   },
   {
     "id": 8,
-    "category": "خۆپەرەسەندن",
-    "title": "ژیانی هۆشیارانە (Conscious Living)",
-    "author": "گەی هێندریکسی | ٢٠٠١",
-    "snippet": "ژیانی هۆشیارانە هونەری هەستکردن بە هەستەکانت، قسەکردنی ڕاستگۆیانە، ناسینی ئامانجی ژیانت و کردنی کردارە کاریگەرەکانە...",
-    "summary": "<div class='summary-section'><div class='summary-heading'>📍 ١. جادووی پابەندی</div><div class='summary-text'>کاتێک بە ڕێگایەک کە ڕۆحتی تێر دەکات پابەند دەبیت، «جادوویەکی نەچاوەڕوان» ڕوودەدات: ڕێگا نادیارەکان دەکرێنەوە، کەسانی هاوڕێ ڕێگا دەردەکەون و یارمەتییە سەیرەکان دێن. وەک و.ئێچ. مەڕی دەڵێت: «لە ساتی پابەندیدا، بەختەوەریش جوڵە دەکات. ئێستا دەستی پێبکە!»</div></div><div class='summary-section'><div class='summary-heading'>🔑 ٢. وازبێنە لە ڕابردوو و یەکخۆبە</div><div class='summary-text'>خۆمان بەوەوە بەستووەینە کە لە ڕابردوو دەڕۆمێنین و لە داهاتوو دەترسین، بۆیە هیچ وزەیەکمان نامێنێت بۆ ئەوەی لە ئێستادا دروست بکەین. بوونەوەری «یەکخود» بە — هەموو لایەنەکانت لەباوەش بگرە. ستۆیکییەکانیش فێرمان دەکەن: لەگەڵ ئەوەی هەیە ڕێک بژە، پاشان هەڵبژێرە چی دەگۆڕیت. پێنج وانەی گەشت فێرت دەکەن بە پەڕ بفێتریت نەک بە چەکوش.</div></div><div class='summary-section'><div class='summary-heading'>🌱 ٣. پابەندی ١٠٠٪</div><div class='summary-text'>پابەندی نەوەد و نۆ پەرسەنت ناکرێت — یان ١٠٠ پەرسەنتین یان هیچ. «یاری بێڕۆح» لە نەیاری خراپترە: لەش لە یاریگادایە بەڵام ڕۆح لەسەر کورسی چاوەڕوانییە. هەم ئامانج و هەم ڕەوتی گەردوون لەباوەش بگرە — ئەوە نهێنی ژیانی پڕە.</div></div>",
+    "category": "فەلسەفەی ستۆیکی",
+    "title": "خۆپەرستی دوژمنە (Ego Is the Enemy)",
+    "author": "ڕایان هۆلیدەی | ساڵی ٢٠١٦",
+    "snippet": "کۆنترۆڵکردنی سەربەرزی کوێر و پەروەردەکردنی نەرموتی...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. خۆبەدەستەوەدان</div><div class=\"summary-text\">دوورکەوتنەوە لە باوەڕی هەڵە بە خود و فێربوونی بەردەوام.</div></div>",
     "quotes": [
-      { "ckb": "ئێمە «کاتی چاکین کە چاوەڕوانی ڕوودانن».", "en": "We are good times waiting to happen." },
-      { "ckb": "پابەندی نەوەد و نۆ پەرسەنت ناکرێت. یان ١٠٠ پەرسەنتین یان هیچ.", "en": "Ninety-nine percent commitment is not possible. We are either 100 percent or not committed at all." },
-      { "ckb": "خۆمان بەوەوە بەند کردووە کە لە ڕابردوو دەڕۆمێنین و لە داهاتوو دەترسین، بۆیە هیچ وزەیەکمان نامێنێت بۆ ئەوەی بزانین کێین و چی دەمانەوێت.", "en": "We keep ourselves so tied up in regretting the past and fearing the future that we don't have any energy left..." }
+      {
+        "ckb": "هەمیشە قوتابی بمێنەوە و هەرگیز خۆت بە زانا مەزانە.",
+        "en": "Ego is the enemy of what you want and what you have."
+      }
     ]
   },
   {
     "id": 9,
-    "category": "خۆپەرەسەندن",
-    "title": "ژیانی بەرەوپێشچوون (Constructive Living)",
-    "author": "دەیڤد ک. ڕێینۆڵدز | ١٩٨٤",
-    "snippet": "ناتوانین هەستەکان ڕاستەوخۆ کۆنترۆڵ بکەین، بەڵام کردارەکانمان دەتوانین — و بە کردار کاریگەری لە هەستەکاندا دەکەین...",
-    "summary": "<div class='summary-section'><div class='summary-heading'>📍 ١. بنەمای بناغەیی</div><div class='summary-text'>کردارمان کۆنترۆڵکراوە بە شێوەیەک کە هەستەکانمان نین. «کردار دواڕێزی هەستەکان دەجوڵێنێت: دەکەین، پاشان هەست دەکەین». مرۆڤی گەورەساڵ دەچێت ئەوە دەکات کە پێویستە بکرێت، بەبێ گوێدانەوە ئەوەی هەستی باش یان خراپە.</div></div><div class='summary-section'><div class='summary-heading'>🔑 ٢. پێنج بنەماکەی ژیانی بەرەوپێشچوون</div><div class='summary-text'>١. هەستەکان ڕاستەوخۆ بە ویست کۆنترۆڵ ناکرێن.<br>٢. دەبێت وەک خۆیان بناسرێن و پەسەند بکرێن.<br>٣. هەر هەستێک — هەرچەندە ناخۆش بێت — سوودی خۆی هەیە (وەک ئاژارسێکەری ئاگر).<br>٤. بە تێپەڕی کات نامێنن ئەگەر دووبارە ئاگر نەدرێنەوە.<br>٥. لە ڕێگەی کردارەوە کاریگەرییان لێ دەکرێت.</div></div><div class='summary-section'><div class='summary-heading'>🌱 ٣. پرسیارە زێڕینەکە</div><div class='summary-text'>لە هەر بارودۆخێکدا — توڕەیی، خەمۆکی، ترس، ماندووبوون — بپرسە: «ئێستا چی پێویستە بکرێت؟» — و بیکە! خەمۆکی «دەکرێت» (چوونە ژوورەوە و ڕاوەستانەوە). ترس هەستێکی تەندروستە و ئاگاداری دروست دەکات. شارەزایی ژیان بە هێواشی، بە کۆشش و ڕاستگۆیی گەشە دەکات — و کاتێک دەکەویت، خۆی بەدەستدەچێت و خۆی بەرزتر دەبێتەوە.</div></div>",
+    "category": "فەلسەفەی ستۆیکی",
+    "title": "بەربەست ڕێگاکەیە (The Obstacle Is the Way)",
+    "author": "ڕایان هۆلیدەی | ساڵی ٢٠١٤",
+    "snippet": "گۆڕینی بەربەست و کێشەکان بۆ دەرفەتی سەرکەوتن...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. بەربەست وەک دەرفەت</div><div class=\"summary-text\">سەیرکردنی کێشەکان وەک کەرەستەی خاو بۆ بنیادنانی سەرکەوتن.</div></div>",
     "quotes": [
-      { "ckb": "کردارمان کۆنترۆڵکراوە بە شێوەیەک کە هەستەکانمان نین.", "en": "Our behavior is controllable in a way that our feelings are not." },
-      { "ckb": "کردار دواڕێزی هەستەکان دەجوڵێنێت... دەکەین، پاشان هەست دەکەین.", "en": "Behavior wags the tail of feelings... We do, then we feel." },
-      { "ckb": "لە هەر بارودۆخێکی فشاردا، لە هەر نیشانەیەکی دەروونیدا، لە هەر هەڵەیەکدا، توخمەکانی چاک هەن.", "en": "In every stressful situation, in every neurotic symptom, in every misdeed, there are elements of good." }
+      {
+        "ckb": "ئەو شتەی ڕێگرە، دەبێتە ڕێگا.",
+        "en": "The impediment to action advances action. What stands in the way becomes the way."
+      }
     ]
   },
   {
     "id": 10,
-    "category": "کار و دارایی",
-    "title": "خۆت بکە! (Do You!)",
-    "author": "ڕەسێڵ سیمۆنس | ٢٠٠٧",
-    "snippet": "دوازدە یاسای سەرکەوتن لە نووسینی موغەی هێپ-هۆپ: چاوخەمە، مانترا، سوپاسنان و... «لە کۆتاییدا هەموو شتێک بە تۆوەیە — نەک جیهان»...",
-    "summary": "<div class='summary-section'><div class='summary-heading'>📍 ١. چاوخەمە و ئامرازەکانی مێشک</div><div class='summary-text'>تەنها یەک شت هەمیشە بەرەو سەرکەوتنت دەبات: چاوخەمەیەک هەبێت و بەی بمێنیت. مانترا وەک «ئامرازی بیرکردنەوە» بەکاربهێنە بۆ ڕوونکردنەوەی مێشک، و ڕۆژت بە سوپاسنان دەست پێبکە — «نانی پاڵەوانان» کاسەیەکی گەورەی سوپاسنانیە.</div></div><div class='summary-section'><div class='summary-heading'>🔑 ٢. ماسی شیوبوو و دوامەخەنە</div><div class='summary-text'>مەبەستت ئەوەیە بەخششەکانی خودا بە جیهان بگەیەنیت — ئەگەر دابەشیان نەکەیت، «دەشیین و مێش دەهێنن و ڕۆحت پیست دەکەن». ئازاری دوورکەوتنەوە لە کاری قورس لە خودی کارەکە خراپترە؛ هەنگاوی منداڵانەی بەردەوام هەمیشە سەرکەوتن دەبێت. «تاپاس» واتە سووتاندنی نەرێنییەکان بە کۆشش و ئازایەتی.</div></div><div class='summary-section'><div class='summary-heading'>🌱 ٣. چاو لە ڕێگا، نەک خەڵات</div><div class='summary-text'>کاتێک چاو لە خەڵاتەکەیە، دەکەویت و دەکەوێت؛ چاو لە ڕێگا بگرە و لە هەوڵدانەکەت فێر بە نەک ئەنجامەکان. بەربەستەکان تاقیکردنەوەن: «دەتەوێت بگەییت یان نا؟». لە جیاتی داواکردنی بەرەکەت، بەرەکەت بە — و کاتێک تۆوی چاک دەچێنی، جیهان بەرامبەرت دەگەڕێنێتەوە. و هەمیشە: گوێ لە دەنگی خودا لەناوتدا بگرە — خۆت بکە!</div></div>",
+    "category": "سەرکردایەتی",
+    "title": "خاوەندارێتی توند (Extreme Ownership)",
+    "author": "جۆکۆ ویلینک | ساڵی ٢٠١٥",
+    "snippet": "وەگرتنی بەرپرسیارێتی تەواو لە هەموو بارودۆخێکدا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. بەرپرسیارێتی</div><div class=\"summary-text\">سەرکردە دەبێت لەژێر هەر بارودۆخێکدا بەرپرسیارێتی هەموو شکست و سەرکەوتنێک هەڵبگرێت.</div></div>",
     "quotes": [
-      { "ckb": "لە کۆتاییدا، فاکتۆرە سەرەکییەکە بۆ ئەوەی خەونەکانت ببینیت یان نا، تۆ دەبیت. نەک جیهان — تۆ.", "en": "In the end, the overriding factor in whether or not you realize your dreams is going to be you. Not the world. YOU." },
-      { "ckb": "ئەگەر خودا دۆڵێک ماسیت پێداوە، دەبێت دابەشی بکەیت؛ ئەگەر نەکەیت، دەشیین و مێش دەهێنن و ڕۆحت پیست دەکەن.", "en": "If God gives you a bucket of fish, you have to distribute those fish. If you don't, they're going to rot and start stinking up your soul." },
-      { "ckb": "دوامەخستن نەخۆشی دەبێت. بەڵام هەنگاو هەڵگرتن — تەنانەت هەنگاوی منداڵانە — هەمیشە سەرکەوتن دەبێت.", "en": "Stalling leads to sickness. But taking steps, even baby steps, always leads to success." }
+      {
+        "ckb": "سەرکردە بەرپرسیارە لە هەموو شتێک کە ڕوودەدات.",
+        "en": "Extreme ownership. Leaders must own everything in their world."
+      }
     ]
   },
   {
     "id": 11,
     "category": "خۆپەرەسەندن",
-    "title": "ڕوونبوونەوەی ڕۆژانە (Everyday Enlightenment)",
-    "author": "دان میلمان | ١٩٩٩",
-    "snippet": "دوازدە دەروازەی گەشەی کەسایەتی: لە دۆزینەوەی بەهای خودەوە تا خزمەتکردنی جیهان — ڕوونبوونەوە لە ژیانی ڕۆژانەدا ڕوودەدات...",
-    "summary": "<div class='summary-section'><div class='summary-heading'>📍 ١. دوازدە دەروازە</div><div class='summary-text'>دۆزینەوەی بەهای خود، وەرگرتنەوەی ویست، وزەبەخشین بە جەستە، بەڕێوەبردنی پارە، ڕامگرتنی مێشک، متمانە بە نەرەتی خۆت، پەسەندکردنی هەستەکان، ڕووبەڕووبوونەوەی ترس، ڕوونکردنەوەی سێبەر، لەباوەشگرتنی سۆزی خۆت، بەخەبەرکردنی دڵ و خزمەتکردنی جیهان.</div></div><div class='summary-section'><div class='summary-heading'>🔑 ٢. «تەنها بیکە» و عادەتەکان</div><div class='summary-text'>هەر چەندە زیرەک و بەهرەمندار بیت، تەنها کردارەکانت چارەنووست دیاری دەکەن. عادەتی باش ئاسان بکە و عادەتی خراپ قورس: بۆ نموونە، پەنجابڕین لە دوای نان بۆ وازهێنان لە تامخۆردن، و تلەڤزیۆن لە کابینەدا بە قوفڵ! ئازاردان بەرگریی دەروونیمانەیە لە بەرامبەر ئەوەی ڕوودەدات — ئازار ماددییە، بەڵام ئازاردان هەڵبژاردەیە.</div></div><div class='summary-section'><div class='summary-heading'>🌱 ٣. هیچ مرۆڤی ڕوونکراوە نییە</div><div class='summary-text'>هیچ «مرۆڤی ڕوونکراوە» نییە — تەنها ساتی ڕوونکراوەی زیاتر یان کەمتر هەیە. خۆشەویستی بە تۆوە دەست پێدەکات: ئەگەر خۆت خۆش نەوێت، چۆن شوێنی خۆشەویستی ئەوانی تر دەدۆزیتەوە؟ و لە کۆتاییدا: کاتێک ڕووناکی خۆت بەرزتر بێتەوە، جیهان دەڕوونا — هەر ساتێک فەرصەتێکە بۆ خزمەتکردنی جیهان.</div></div>",
+    "title": "هێزی بیرکردنەوەی ئەرێنی",
+    "author": "نۆرمان ڤینسێنت پیل | ساڵی ١٩٥٢",
+    "snippet": "بڕوا بە تواناکانی خود و لابردنی گومانەکان...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. متمانە</div><div class=\"summary-text\">دروستکردنی متمانەی بەهێز بە خود لە ڕێگەی دەربڕینی ئەرێنییەوە.</div></div>",
     "quotes": [
-      { "ckb": "چی بەسەردێت وەک پیرۆزێک دوعا بکەیت یان وەک یۆگی بیکۆشیتەوە، ئەگەر کاتێک چاوەکانت دەکەیتەوە نەگۆڕابیت؟", "en": "What good does it do to pray like a saint or meditate like a yogi if we are unchanged when we open our eyes?" },
-      { "ckb": "تەنها کێشەی ژیانت بەرگریی مێشکتە لە بەرامبەر ئەوەی ژیان بە خۆیدا دەڕوات.", "en": "The only problem in your life is your mind's resistance to life as it unfolds." },
-      { "ckb": "هیچ مرۆڤێکی ڕوونکراوە نییە — تەنها مرۆڤی ساتە ڕوونکراوەکانن.", "en": "There are no enlightened people — only people with more (or less) enlightened moments." },
-      { "ckb": "کاتێک ڕووناکی خۆت بەرزتر بێتەوە، جیهان دەڕوونا.", "en": "As your own light shines more brightly, you illuminate the world." }
+      {
+        "ckb": "باوەڕت بەخۆت هەبێت، هێزت دەبێت.",
+        "en": "Believe in yourself and have faith in your abilities."
+      }
     ]
   },
   {
     "id": 12,
-    "category": "کار و دارایی",
-    "title": "خاڵی سەرنج (Focal Point)",
-    "author": "برایان تڕەیسی | ٢٠٠١",
-    "snippet": "سیستەمێکی سەلمێندراو بۆ ساکارکردنی ژیانت، دوو هێندەکردنی بەرهەمهێنان و بەدیهێنانی هەموو ئامانجەکانت...",
-    "summary": "<div class='summary-section'><div class='summary-heading'>📍 ١. بەرپرسیارێتی ١٠٠٪</div><div class='summary-text'>بنەمای یەکەمی سەرکەوتن وەرگرتنی بەرپرسیارێتی تەواوە: بێ بهانە، سکاڵا و ڕەخنە لە ئەوانی تر. لە ئێستاوە بەڵێ: «من بەرپرسیم» — و وەک دروستکەر مامەڵە بکە نەک قوربانی. هەموو شت قورسە پێش ئاسانبوون؛ عادەتە نوێیەکان بە کۆشش بنیات دەنێن بەڵام کاتێک جێگیر بوون، بە کەمی زۆر شت دەدەستخست دەخەن.</div></div><div class='summary-section'><div class='summary-heading'>🔑 ٢. ئامرازە بەهێزەکان</div><div class='summary-text'>«بیرکردنەوەی بنەمای سفر» بپرسە: ئەگەر ئەمڕۆ دەست پێبکەمەوە، ئەم شتە جارێکی تر دەکەمەوە؟ ئەگەر وەڵامەکە نەخێرە — چۆن و بە چەند خێرایی دەرم دەکەم؟ هەر خولەکێک پلاندانان دە خولەکت لە جێبەجێکردندا بۆت دەپارێزێت. و یەک ئاراستە بە یەک دەستکردن تا تەواوبوون — کەمکردنەوەی کاتی کارە گەورەکان بە ٨٠ پەرسەنت.</div></div><div class='summary-section'><div class='summary-heading'>🌱 ٣. بیرکردنەوە و خوشبینی</div><div class='summary-text'>سەرکەوتووان زۆربەی کات لەوە دەکۆڵنەوە کە چیت دەوێت و چۆن دەیهێنیت؛ نەسەرکەوتووان لەوەی چیت نەدەوێت و کێ لێ بدرێت. خوشبینی باشترین پێشبینییە بۆ خۆشبەختی، تەندروستی و دەوڵەمەندی. و پرسیارێکی بەهێز: «بۆچوو هێشتا لە ئامانجم نیم؟» — وەڵامەکە کۆسپە سەرەکییەکەت پیشان دەدات. بدۆزەوە، لاببە، سوودمەندبە!</div></div>",
+    "category": "دەروونناسی",
+    "title": "پایکۆ-سایبەرنێتیکس (Psycho-Cybernetics)",
+    "author": "ماکسوێڵ مالتز | ساڵی ١٩٦٠",
+    "snippet": "وێنەی خود و توانای سەرکەوتنی سروشتی مێشک...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. وێنەی خود</div><div class=\"summary-text\">گۆڕینی وێنەی دەروونی خود بۆ گۆڕینی چارەنووس و سەرکەوتن.</div></div>",
     "quotes": [
-      { "ckb": "هەر خولەکێک کە لە پلاندانان خەرج دەکەیت، بە قەدەری دە خولەکت لە جێبەجێکردندا بۆت دەپارێزێت.", "en": "Every minute you spend in planning will save you as many as ten minutes in execution." },
-      { "ckb": "ئاستی خوشبینیت باشترین پێشبینییە بۆ ئەوەی چەندە خۆشبەخت، تەندروست، دەوڵەمەند و درێژژی بیت.", "en": "Your level of optimism is the very best predictor of how happy, healthy, wealthy, and long-lived you will be." },
-      { "ckb": "هەموو شت قورسە پێش ئاسانبوون.", "en": "Everything is hard before it is easy." }
+      {
+        "ckb": "مێشکت وەک کۆمپیوتەرێکی پێشکەوتوو کار دەکات.",
+        "en": "Your brain maintains a goal-seeking mechanism."
+      }
     ]
   },
   {
     "id": 13,
-    "category": "خۆپەرەسەندن",
-    "title": "گەی و کەیتی هێندریکسی (وۆرکشۆپەکانی خۆشەویستی هۆشیارانە)",
-    "author": "گەی و کەیتی هێندریکسی | ٢٠٠٩",
-    "snippet": "سوپاسنان دەرمانی موعجیزاویە و ڕێژەی ٥:١ ژمارە جادوویەکییەکی خۆشەویستییە — تێبینییەکان لە وۆرکشۆپەکانیان کە ژیانم گۆڕی...",
-    "summary": "<div class='summary-section'><div class='summary-heading'>📍 ١. سوپاسنان و ڕێژەی ٥:١</div><div class='summary-text'>توێژینەوەی جۆن گۆتمان دەریخستووە کە پەیوەندییە بەردەوامەکان ڕێژەی ٥ پەیوەندیی ئەرێنی بە یەک نەرێنییان هەیە — نەک ١:١! لێستێکی ١٠ خاڵی دروست بکە: ١٠ شت کە لە هاوڕێ ژیانت سوپاس دەکەیت، و ١٠ شت لە خۆت. سوپاسنان واتە ناسینی بەهای شتێک — و کاتێک کەسێک دەسوپاسیت، بەهاکەی بەرز دەبێتەوە!</div></div><div class='summary-section'><div class='summary-heading'>🔑 ٢. بەرپرسیارێتی و گۆڕان</div><div class='summary-text'>١٠٠٪ بەرپرسیارێتی وەربگرە — «دەست لێبدە، بەڵام پشتی مەکەوە». ڕاکشان ڕوودەدات (لانەوە، ڕەخنە، بێئاگایی...) بەڵام دەتوانیت بگۆڕیت: هەناسە بدە و بگەڕێوە بۆ ئامادەبوونی بۆ فێربوون. پابەندی نوێ بکەوە — وەک فڕۆکەوان کە ٩٠ پەرسەنتی کات لە ڕێگا دوورە بەڵام هەمیشە ڕێگا ڕاست دەکاتەوە!</div></div><div class='summary-section'><div class='summary-heading'>🌱 ٣. پرۆجێکشن و پرسیارە باشەکان</div><div class='summary-text'>ئەوەی لە کەسانی تر ڕەخنەی لێ دەگریت زۆرجار وێنەی خۆتە — «پرۆجێکشنەکانت بخۆ». ڕاستگۆیی تاقیکردنەوەی پەیوەندییەکەیە: ئەگەر هەمیشە ڕاست بڵێیت، پەیوەندییە ڕوونەکانت لەگەڵ هەمووان دەبێت. و لە جیاتی «بۆچی؟» (کە مێشک دەگرمێنێت)، «چۆن؟» و «چی؟» بپرسە — ئەوان دەروازەی دروستکردنن.</div></div>",
+    "category": "پەیوەندییەکان",
+    "title": "پێنج زمانەکەی خۆشەویستی",
+    "author": "گاری چاپمان | ساڵی ١٩٩٢",
+    "snippet": "تێگەیشتن لە چۆنیەتی دەربڕینی خۆشەویستی لە خێزاندا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. زمانەکانی خۆشەویستی</div><div class=\"summary-text\">ناسینەوەی شێوازی تایبەتی دەربڕینی هەست لەلای کەسانی دەوروبەر.</div></div>",
     "quotes": [
-      { "ckb": "هێزێکی زۆری چاکبوونەوە هەیە لە وەرگرتنی بەرپرسیارێتی لە شتێک لە ئێستادا، بەڵام هیچ بەهای چاکبوونەوەیەکی نییە گەڕانەوە بۆ ڕابردوو بۆ لێدانی تاوان بە خۆت یان ئەوانی تر.", "en": "There is tremendous healing power in taking responsibility for something right now in the present, but no healing value in looking back to the past to blame yourself or anyone else." },
-      { "ckb": "ئامادەیی بۆ فێربوون لە هەر ساتێک زۆر گرنگترە لە ژێرەوی زیرەکی، پاشماوەی خێزان یان خوێندن.", "en": "Willingness to learn from each moment is much more important than IQ, family background or education." },
-      { "ckb": "پرسیارەکانی «بۆچی؟» ڕاستەوخۆ دەیبەن بۆ حەوت-یازدە.", "en": "'Why?' questions will take you straight to 7-11." }
+      {
+        "ckb": "خۆشەویستی هەڵبژاردنێکە نەک تەنها هەست.",
+        "en": "Love is a choice."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "category": "ئابووری",
+    "title": "دەوڵەمەندترین پیاوی بابل",
+    "author": "جۆرج ئێس. کلەیسۆن | ساڵی ١٩٢٦",
+    "snippet": "بنەماکانی کۆن پاشەکەوتکردن و دەوڵەمەندبوون...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. پاشەکەوت</div><div class=\"summary-text\">هەڵگرتنی بەشێک لە داهات وەک یەکەم هەنگاوی دەوڵەمەندبوون.</div></div>",
+    "quotes": [
+      {
+        "ckb": "بەشێک لەوەی بەدەستی دەهێنیت بۆ خۆت هەڵبگرە.",
+        "en": "A part of all you earn is yours to keep."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "category": "هۆشیاری و ئارامی",
+    "title": "وەک مۆنکێک بیر بکەرەوە (Think Like a Monk)",
+    "author": "جەی شێتی | ساڵی ٢٠٢٠",
+    "snippet": "فێربوون لە ژیانی دێرینی مۆنکەکان بۆ ئارامی ناوەکی...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ئارامی ناوەکی</div><div class=\"summary-text\">دوورکەوتنەوە لە ژاوەژاوی مۆدێرن و گەشەپێدانی ناخ.</div></div>",
+    "quotes": [
+      {
+        "ckb": "تۆ ئەو مێشکەی خۆت نییەیت، بەڵکو ئەو کەسەی کە گوێی لێدەگرێت.",
+        "en": "You are not your thoughts."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "category": "کار و بەڕێوەبردن",
+    "title": "بزنز بە شێوازی پەرجوو (Drive)",
+    "author": "دانیال پینک | ساڵی ٢٠٠٩",
+    "snippet": "پاڵنەری ناوەکی و سەربەخۆیی لە کاردا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. پاڵنەر</div><div class=\"summary-text\">سەربەخۆیی، شارەزایی و بوونی ئامانج باشترین پاڵنەری مرۆڤن.</div></div>",
+    "quotes": [
+      {
+        "ckb": "پارە تەنها هۆکار نییە، بەڵکو ئازادی و ماناش گرنگن.",
+        "en": "Control leads to engagement; autonomy leads to high performance."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "category": "مارکێتینگ",
+    "title": "مانگای وەنەوشەیی (Purple Cow)",
+    "author": "سەت گۆدین | ساڵی ٢٠٠٣",
+    "snippet": "جیاوازبوون و داهێنان لە بازاڕی ڕکابەردا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. جیاوازبوون</div><div class=\"summary-text\">پێشکەشکردنی بەها بە شێوازێک کە خەڵک ناچار بکات باسی بکەن.</div></div>",
+    "quotes": [
+      {
+        "ckb": "نایاب بە یان نەبینراو بە.",
+        "en": "In a crowded marketplace, fitting in is failing. Inelegance is invisibility."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "category": "گەشەی کەسی",
+    "title": "یاسای ١٠ هێندە (The 10X Rule)",
+    "author": "گرانت کاردۆن | ساڵی ٢٠١١",
+    "snippet": "دانانی ئامانجی دە ئەوەندە گەورەتر و هەوڵی بەردەوام...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ئامانجی مەزن</div><div class=\"summary-text\">دانانی ئامانجی گەورە و تەرخانکردنی هەوڵی سەددرەدی.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ئامانجەکانت دە ئەوەندە گەورە بکە.",
+        "en": "Massive action is the only cure for mediocrity."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "category": "ادب و فەلسەفە",
+    "title": "شازادەی بچووک (The Little Prince)",
+    "author": "ئانتوان دێ سانت-ئێگزوپێری | ساڵی ١٩٤٣",
+    "snippet": "بینینی جیهان بە چاوی دڵ و بەهای پەیوەندی مرۆیی...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ڕوانگەی دڵ</div><div class=\"summary-text\">شتە سەرەکییەکان بە چاو نابینرێن؛ تەنها بە دڵ دەبینرێن.</div></div>",
+    "quotes": [
+      {
+        "ckb": "تەنها بە دڵ دەتوانیت بەجوانی ببینی.",
+        "en": "What is essential is invisible to the eye."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "category": "هۆشیاری",
+    "title": "هێزی باوەڕهێنان (The Magic of Believing)",
+    "author": "کڵۆد بریستۆڵ | ساڵی ١٩٤٨",
+    "snippet": "بەکارهێنانی هێزی ژێرخانی مێشک بۆ دروستکردنی واقیع...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. بڕوا و واقیع</div><div class=\"summary-text\">مێشک واقیع دروست دەکات ئەگەر باوەڕی بە ئامانجەکەی هەبێت.</div></div>",
+    "quotes": [
+      {
+        "ckb": "باوەڕ هێزێکە کە ژیان دەگۆڕێت.",
+        "en": "Believing is the key to unlocking hidden powers."
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "category": "فیکر و هۆشیاری",
+    "title": "زنجیرەی داهاتوو و هۆشیاری سەردەم",
+    "author": "کۆمەڵێک نووسەر | ساڵی ٢٠٢١",
+    "snippet": "فیکری ڕەخنەگرانە لە جیهانی نوێ و پەرەپێدانی زانیاری گشتی...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. فیکری ڕەخنەگرانە</div><div class=\"summary-text\">شیکردنەوەی چەمکە کۆمەڵایەتییەکان بە تێڕوانینێکی کراوە.</div></div>",
+    "quotes": [
+      {
+        "ckb": "هۆشیاری سەردەم پێویستی بە تێڕوانینی ڕەخنەگرانە هەیە.",
+        "en": "Modern consciousness requires critical thinking."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "category": "فەلسەفە",
+    "title": "تیۆری مۆدێرن و بنەماکانی",
+    "author": "فەیلەسوفە هاوچەرخەکان | ساڵی ٢٠١٩",
+    "snippet": "لێکۆڵینەوە لە پێکهاتەی هۆشیاری و هاوسەنگی ژیان و تەکنەلۆجیا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. پێکهاتەی هۆشیاری</div><div class=\"summary-text\">تێگەیشتن لە چۆنیەتی کارکردنی کۆمەڵگە و تاک لە سەردەمی تەکنەلۆجیادا.</div></div>",
+    "quotes": [
+      {
+        "ckb": "پاراستنی سروشتی مرۆڤ لە جیهانی مۆدێرندا ئەرکە.",
+        "en": "Preserving human nature in a digital age is essential."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "category": "فەلسەفە",
+    "title": "فەلسەفەی عەقڵی ڕەخنەگر",
+    "author": "کۆمەڵێک فەیلەسوف | ساڵی ٢٠١٨",
+    "snippet": "پرسیارکردن لە بنەماکان و ئازادی هزری...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. پرسیارکردن لە بنەماکان</div><div class=\"summary-text\">قبوڵنەکردنی هیچ شتێک بە بێ بەڵگە و پشکنینی لۆژیکی.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ئازادی هزری بە پرسیارکردن دەست پێدەکات.",
+        "en": "Intellectual freedom begins with questioning."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "category": "دەروونناسی",
+    "title": "بەرەو ئارامی دەروونی",
+    "author": "پسپۆڕانی دەروونناسی | ساڵی ٢٠٢٠",
+    "snippet": "کۆنتڕۆڵکردنی نیگەرانی و سوپاسگوزاری وەک چارەسەر...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. کۆنتڕۆڵکردنی نیگەرانی</div><div class=\"summary-text\">تەکنیکەکانی هێمنکردنەوەی مێشک لە کاتی قەیرانەکاندا.</div></div>",
+    "quotes": [
+      {
+        "ckb": "سوپاسگوزاری کلیلی ئارامی دەروونە.",
+        "en": "Gratitude is the key to inner peace."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "category": "بڕیاردان",
+    "title": "هونەری بڕیاردانی ژیرانە",
+    "author": "شارەزایانی بڕیاردان | ساڵی ٢٠١٧",
+    "snippet": "دوورکەوتنەوە لە هەڵە سۆزدارییەکان و پێشبینیکردنی لێکەوتەکان...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. لۆژیک لە بڕیاردا</div><div class=\"summary-text\">بڕیاردان لەسەر بنەمای داتا و لۆژیک نەک هەستی کاتی.</div></div>",
+    "quotes": [
+      {
+        "ckb": "بڕیاری ژیرانە داهاتوو دەگۆڕێت.",
+        "en": "Wise decisions shape the future."
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "category": "سەرکردایەتی",
+    "title": "بنەماکانی سەرکردایەتی سەرکەوتوو",
+    "author": "شارەزایانی بەڕێوەبردن | ساڵی ٢٠١٩",
+    "snippet": "ئیلهامبەخشین بە تیم و چارەسەرکردنی قەیرانەکان...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ئیلهامبەخشین</div><div class=\"summary-text\">ڕێنماییکردنی کەسانی تر بە نموونەی کرداری خۆت.</div></div>",
+    "quotes": [
+      {
+        "ckb": "سەرکردەی راستەقینە نموونە پیشدەدات.",
+        "en": "A true leader leads by example."
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "category": "گەشەی کەسی",
+    "title": "گەشەی کەسی و بەڕێوەبردنی کات",
+    "author": "ڕاهێنەرانی گەشەپێدان | ساڵی ٢٠٢١",
+    "snippet": "پێشینەدان بە کارە گرنگەکان و تێکشکاندنی سستی...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. پێشینەدان</div><div class=\"summary-text\">تەرکیزکردن لەسەر ئەوەی بەڕاستی جیاوازی دروست دەکات.</div></div>",
+    "quotes": [
+      {
+        "ckb": "بەڕێوەبردنی کات بریتییە لە بەڕێوەبردنی خود.",
+        "en": "Time management is self-management."
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "category": "پەیوەندییەکان",
+    "title": "بنەماکانی پەیوەندی بەهێز",
+    "author": "پسپۆڕانی پەیوەندییەکان | ساڵی ٢٠١٨",
+    "snippet": "گوێگرتنی چالاک و ڕوونی لە دەربڕیندا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. گوێگرتنی چالاک</div><div class=\"summary-text\">تێگەیشتنی قووڵ لە مەبەستی بەرامبەر پێش قسەکردن.</div></div>",
+    "quotes": [
+      {
+        "ckb": "گوێگرتن نیوەی پەیوەندییە.",
+        "en": "Listening is half of communication."
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "category": "دەروونناسی",
+    "title": "هۆشیاری سۆزداری و کاریگەری",
+    "author": "پسپۆڕانی دەروونناسی | ساڵی ٢٠٢٠",
+    "snippet": "ناسینەوەی هەستەکانی خود و هاوسۆزی لەگەڵ دەوروبەردا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ناسینەوەی هەستەکان</div><div class=\"summary-text\">ئاگابوون لە گۆڕانکارییە سۆزدارییەکان و هۆکارەکانیان.</div></div>",
+    "quotes": [
+      {
+        "ckb": "هۆشیاری سۆزداری بناغەی سەرکەوتنە.",
+        "en": "Emotional intelligence is the foundation of success."
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "category": "تەکنەلۆجیا",
+    "title": "داهاتووی زیرەکی و مرۆڤ",
+    "author": "توێژەرانی سەردەم | ساڵی ٢٠٢٢",
+    "snippet": "کاریگەری تەکنەلۆجیا لەسەر مێشک و پاراستنی مرۆڤدۆستی...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. خۆگونجاندن</div><div class=\"summary-text\">چۆنیەتی خۆگونجاندن لەگەڵ گۆڕانکارییە خێراکانی جیهان.</div></div>",
+    "quotes": [
+      {
+        "ckb": "تەکنەلۆجیا ئامرازە، مرۆڤایەتی ئامانجه.",
+        "en": "Technology is a tool; humanity is the goal."
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "category": "فەلسەفەی ژیان",
+    "title": "بنەماکانی ژیانی بەختەوەر",
+    "author": "فەیلەسوفە کۆن و نوێکان | ساڵی ٢٠٢١",
+    "snippet": "ڕازیبوون بە کەم و زۆر و دوورکەوتنەوە لە خۆبەراوردکردن...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ڕازیبوون</div><div class=\"summary-text\">دۆزینەوەی ئارامی لە ناوەرۆکی ژیانی ڕۆژانەدا.</div></div>",
+    "quotes": [
+      {
+        "ckb": "بەختەوەری لە ناوەرۆکی ناخدایە.",
+        "en": "Happiness comes from within."
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "category": "داهێنان",
+    "title": "هێزی بیرکردنەوەی داهێنەر",
+    "author": "داهێنەرانی سەردەم | ساڵی ٢٠٢٠",
+    "snippet": "شکاندنی قالبە کۆنەکان و پێشوازیکردن لە شکست...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. دەرەوەی سنورەکان</div><div class=\"summary-text\">بیرکردنەوە لە دەرەوەی سنورە باوەکان بۆ دۆزینەوەی چارەسەر.</div></div>",
+    "quotes": [
+      {
+        "ckb": "داهێنان پێویستی بە تێکشکاندنی سنورەکان هەیە.",
+        "en": "Creativity requires breaking boundaries."
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "category": "بەرهەمداری",
+    "title": "فەلسەفەی کارکردنی بەردەوام",
+    "author": "پسپۆڕانی بەرهەمداری | ساڵی ٢٠١٩",
+    "snippet": "پەرەپێدانی خووە ڕەسەنەکان و دوورکەوتنەوە لە ماندووبونی توند...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. خووە ڕەسەنەکان</div><div class=\"summary-text\">ڕێکخستنی کات و وزە بە شێوازێکی هاوسەنگ.</div></div>",
+    "quotes": [
+      {
+        "ckb": "بەردەوامی لە هەنگاوەکان نهێنی سەرکەوتنە.",
+        "en": "Consistency is the secret of success."
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "category": "ئابووری",
+    "title": "بنەماکانی ئابووری ژیان",
+    "author": "شارەزایانی مالی | ساڵی ٢٠١٨",
+    "snippet": "پاراستنی هاوسەنگی خەرجی و داهات و وەبەرهێنان لە سەرچاوەدا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. هاوسەنگی مالی</div><div class=\"summary-text\">بەڕێوەبردنی ژیرانەی سەرچاوە مادییەکان.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ئابووری ژیان لەسەر خەرجی ژیرانە بنیاد دەنرێت.",
+        "en": "Life economy is built on wise spending."
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "category": "دەروونناسی",
+    "title": "هونەری تێگەیشتن لە خود",
+    "author": "دەروونناسان | ساڵی ٢٠٢٠",
+    "snippet": "قووڵبوونەوە لە ناخدا و ئاشتی لەگەڵ ڕابردوودا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ناسینەوەی ناخ</div><div class=\"summary-text\">ناسینەوەی خاڵە لاواز و بەهێزەکانی کەسایەتی.</div></div>",
+    "quotes": [
+      {
+        "ckb": "تێگەیشتن لە خود یەکەم هەنگاوی ژیرییە.",
+        "en": "Understanding oneself is the first step of wisdom."
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "category": "فیکر",
+    "title": "بنەماکانی ئازادی فکری",
+    "author": "بیرمەندان | ساڵی ٢٠٢١",
+    "snippet": "ئازادبوونی مێشک لە ئاراستە گشتییەکان...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ئازادی مێشک</div><div class=\"summary-text\">هەڵسەنگاندنی سەربەخۆی ڕووداوەکان و کرانەوە.</div></div>",
+    "quotes": [
+      {
+        "ckb": "مێشکی ئازاد بنەمای پێشکەوتنە.",
+        "en": "A free mind is the foundation of progress."
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "category": "پیشەیی",
+    "title": "ڕێگاکانی پێشکەوتنی پیشەیی",
+    "author": "ڕاوێژکارانی کار | ساڵی ٢٠٢٢",
+    "snippet": "پەرەپێدانی لێهاتوویی تایبەت و تۆڕی پەیوەندی...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. لێهاتوویی تایبەت</div><div class=\"summary-text\">بوون بە کەسێکی لێهاتوو لە بوارەکەی خۆتدا.</div></div>",
+    "quotes": [
+      {
+        "ckb": "شارەزایی لە کاردا سەرکەوتن مسۆگەر دەکات.",
+        "en": "Expertise guarantees career success."
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "category": "فەلسەفەی ستۆیکی",
+    "title": "فەلسەفەی ئارامی سروشتی",
+    "author": "نووسەرانی ستۆیکی | ساڵی ٢٠١٧",
+    "snippet": "قبوڵکردنی سنووری دەسەڵاتی خود و ئارامگرتن...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. سنووری دەسەڵات</div><div class=\"summary-text\">تەرکیزکردن تەنها لەسەر ئەو شتانەی لە توانای ئێمەدان.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ئارامی لە قبوڵکردنی ڕاستییەکاندایە.",
+        "en": "Peace lies in accepting reality."
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "category": "پەروەردە",
+    "title": "پەروەردەی هۆشیاری منداڵ",
+    "author": "پسپۆڕانی پەروەردە | ساڵی ٢٠٢٠",
+    "snippet": "گرنگیدان بە لایەنی سۆزداری و متمانە...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. لایەنی سۆزداری</div><div class=\"summary-text\">پەروەردەکردن لەسەر بنەمای متمانە و خۆشەویستی.</div></div>",
+    "quotes": [
+      {
+        "ckb": "پەروەردەی ڕاستەقینە لە متمانەوە دەست پێدەکات.",
+        "en": "True education begins with trust."
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "category": "سەرکەوتن",
+    "title": "فەلسەفەی سەرکەوتنی بەردەوام",
+    "author": "ڕاهێنەرانی ژیان | ساڵی ٢٠٢١",
+    "snippet": "پلانی درێژخایەن و بەڕێوەبردنی سەرچاوەکان...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. پلانی درێژخایەن</div><div class=\"summary-text\">دانانی ستراتیژی ڕوون بۆ گەیشتن بە لوتکە.</div></div>",
+    "quotes": [
+      {
+        "ckb": "سەرکەوتن گەشتە نەک تەنها وێستگە.",
+        "en": "Success is a journey, not just a destination."
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "category": "فەلسەفە",
+    "title": "دیدگای فەیلەسوفە مەزنەکان",
+    "author": "شارەزایانی فەلسەفە | ساڵی ٢٠١٨",
+    "snippet": "شیکردنەوەی مانای ژیان و عەقڵی مرۆڤ...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. مانای بوون</div><div class=\"summary-text\">تێڕوانینی قووڵ بۆ بنەماکانی ژیان و فیکر.</div></div>",
+    "quotes": [
+      {
+        "ckb": "فەلسەفە هونەری ژیانکردنە.",
+        "en": "Philosophy is the art of living."
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "category": "دەروونناسی",
+    "title": "هێزی ناخ و متمانە بە خود",
+    "author": "دەروونناسان | ساڵی ٢٠١٩",
+    "snippet": "پەروەردەکردنی هێزی دەروونی لە بەرامبەر شکاندا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. بەرگگرتنی دەروونی</div><div class=\"summary-text\">توانای هەستانەوە دوای هەر شکستێک.</div></div>",
+    "quotes": [
+      {
+        "ckb": "هێزی ناخ هەموو بەربەستێک تێدەپەڕێنێت.",
+        "en": "Inner strength overcomes all obstacles."
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "category": "کار",
+    "title": "هونەری بەڕێوەبردنی کات و وزە",
+    "author": "شارەزایانی بەرهەمداری | ساڵی ٢٠٢٠",
+    "snippet": "دابەشکردنی ژیرانەی وزە بۆ کارە لەپێشینەکان...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. وزەی کار</div><div class=\"summary-text\">تەرکیزکردن لەسەر کاتی باڵای وزە و بەرهەم.</div></div>",
+    "quotes": [
+      {
+        "ckb": "بەڕێوەبردنی وزە گرنگترە لە بەڕێوەبردنی کات.",
+        "en": "Energy management is more important than time management."
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "category": "ئابووری",
+    "title": "بنەماکانی سەرمایەگوزاری ژیرانە",
+    "author": "ئابوورناسان | ساڵی ٢٠٢١",
+    "snippet": "ڕێگاکانی پاراستنی سامان و زیادکردنی داهات...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. وەبەرهێنان</div><div class=\"summary-text\">دروستکردنی سەرچاوەی تری داهات بە شێوازی زانستی.</div></div>",
+    "quotes": [
+      {
+        "ckb": "پارەت بخە کار تاوەکو بۆت کار بکات.",
+        "en": "Put your money to work for you."
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "category": "سەرکردایەتی",
+    "title": "کاریگەری و ڕێنیشاندان",
+    "author": "شارەزایانی سەرکردایەتی | ساڵی ٢٠١٧",
+    "snippet": "چۆنیەتی دروستکردنی کاریگەری ئەرێنی لەسەر دەوروبەر...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. کاریگەری ئەرێنی</div><div class=\"summary-text\">ڕێنماییکردنی کەسانی تر بە ڕەوشت و زانیاری.</div></div>",
+    "quotes": [
+      {
+        "ckb": "سەرکردەی ڕاستەقینە شوێنکەوتوو دروست دەکات، نەک سەرکردە.",
+        "en": "A true leader creates followers, not leaders."
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "category": "هۆشیاری",
+    "title": "فەلسەفەی ئاگایی و خەوڕەوی",
+    "author": "فەیلەسوفە ڕۆژهەڵاتییەکان | ساڵی ٢٠١٨",
+    "snippet": "هۆشیاربوونەوە لە هەڵسوکەوت و کاردانەوەکان...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ئاگایی تەواو</div><div class=\"summary-text\">ژدان و ئاگابوون لە ساتەکانی ژیان بە بێ لایەنگری.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ژیانی بەئاگا ژیانێکی مەزنە.",
+        "en": "A conscious life is a great life."
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "category": "پەیوەندییەکان",
+    "title": "هونەری گفتوگۆ و ڕازیكردن",
+    "author": "پسپۆڕانی دانوستان | ساڵی ٢٠١٩",
+    "snippet": "ڕێگاکانی گەیشتن بە ڕێککەوتن بە زمانێکی نەرم و لۆژیکی...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. دانوستان</div><div class=\"summary-text\">تێگەیشتن لە پێداویستی لایەنی بەرامبەر بۆ سەرکەوتن.</div></div>",
+    "quotes": [
+      {
+        "ckb": "دانوستانی سەرکەوتوو واتە براوە بۆ هەردوولا.",
+        "en": "Successful negotiation means win-win."
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "category": "خۆپەرەسەندن",
+    "title": "بڕیارە ئازاکانی ژیان",
+    "author": "ڕاهێنەرانی گەشە | ساڵی ٢٠٢٠",
+    "snippet": "تێپەڕاندنی ترس و هەنگاونان بەرەو نەزانراو...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. تێپەڕاندنی ترس</div><div class=\"summary-text\">ترس تەنها لە مێشکدایە؛ بە کردار دەڕەوێتەوە.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ئازایەتی نەبوونی ترس نییە، بەڵکو تێپەڕاندنییەتی.",
+        "en": "Courage is not the absence of fear, but the triumph over it."
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "category": "دەروونناسی",
+    "title": "کاریگەری دەروونی ژینگە لەسەر تاک",
+    "author": "دەروونناسان | ساڵی ٢٠٢١",
+    "snippet": "چۆنیەتی کۆنتڕۆڵکردنی کاریگەرییە دەرەکییەکان...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ژینگەی دەروونی</div><div class=\"summary-text\">هەڵبژاردنی هاوڕێ و شوێنی گونجاو بۆ گەشە.</div></div>",
+    "quotes": [
+      {
+        "ckb": "تۆ تێکڕای ئەو کەسانەیت کە زۆرترین کاتیان لەگەڵ بەسەر دەبەیت.",
+        "en": "You are the average of the people you spend the most time with."
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "category": "گشتی",
+    "title": "بنەماکانی ژیانی پڕ لە مانای قووڵ",
+    "author": "بیرمەندان | ساڵی ٢٠٢٢",
+    "snippet": "دۆزینەوەی ئامانج و بەخشینی بەها بە کۆمەڵگە...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. مانای قووڵ</div><div class=\"summary-text\">ژماردنی ساتەکان بە بەخشین و ئارامی ناخ.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ژیانی بێ ئامانج وەکو کەشتییەکی بێ ئاراستەیە.",
+        "en": "A life without purpose is like a ship without a rudder."
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "category": "بەرهەمداری",
+    "title": "تەرکیز و هێزی دوورکەوتنەوە لە پەرتەوازەیی",
+    "author": "پسپۆڕانی کار | ساڵی ٢٠٢٠",
+    "snippet": "ڕێگاکانی پاراستنی تەرکیز لە جیهانی پڕ لە ژاوەژاو...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. تەرکیزی قوڵ</div><div class=\"summary-text\">گرنگیدان بە یەک کار لە یەک کاتدا بە تەواوی وزەوە.</div></div>",
+    "quotes": [
+      {
+        "ckb": "تەرکیز کلیلی هەموو داهێنانێکە.",
+        "en": "Focus is the key to all innovation."
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "category": "فەلسەفە",
+    "title": "هونەری ژیان بە شێوازی ستۆیکی",
+    "author": "فەیلەسوفە کۆنەکان | ساڵی ١٨٠",
+    "snippet": "ڕازیبوون بە چارەنووس و کۆنترۆڵکردنی سۆزەکان...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. کۆنترۆڵی سۆز</div><div class=\"summary-text\">ناشکانی دەروون لە بەرامبەر کارەساتی دەرەکیدا.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ئەوە ڕووداوەکان نییە کە ئێمە دەڕمێنێت، بەڵکو دیدگامان لەسەریان.",
+        "en": "It's not events that upset us, but our judgment about them."
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "category": "خۆپەرەسەندن",
+    "title": "بنەماکانی سەرکەوتنی بەردەوام",
+    "author": "ڕاهێنەرانی گەشە | ساڵی ٢٠٢١",
+    "snippet": "گۆڕینی بیرکردنەوە و ڕاهێنانی مێشک لەسەر نەبەزین...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. عەقڵی گەشەسەندوو</div><div class=\"summary-text\">بڕوابوون بەوەی تواناکان بە ڕاهێنان گەورە دەبن.</div></div>",
+    "quotes": [
+      {
+        "ckb": "شکست تەنها وێستگەیەکی فێربوونە.",
+        "en": "Failure is simply an opportunity to learn."
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "category": "کار",
+    "title": "بەڕێوەبردنی پڕۆژە و تیمی سەرکەوتوو",
+    "author": "شارەزایانی بەڕێوەبردن | ساڵی ٢٠١٩",
+    "snippet": "دابەشکردنی ئەرکەکان و بەدیهێنانی ئامانجی هاوبەش...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ئامانجی هاوبەش</div><div class=\"summary-text\">یەکخستنی توانا جیاوازەکان بۆ سەرکەوتنی تیم.</div></div>",
+    "quotes": [
+      {
+        "ckb": "پێکەوە دەتوانیت شاخەکان بسوڕێنیتەوە.",
+        "en": "Together we can achieve the impossible."
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "category": "دەروونناسی",
+    "title": "هێزی ژێرخانی مێشک",
+    "author": "دەروونناسان | ساڵی ١٩٦٣",
+    "snippet": "بەکارهێنانی هێزی نەبینراوی مێشک بۆ چارەسەر...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ژێرخانی هزری</div><div class=\"summary-text\">مێشک بە بێ وەستان کار لەسەر کێشەکان دەکات.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ژێرخانی مێشک هەمیشە لە خزمەتتدایە.",
+        "en": "Your subconscious mind is always working for you."
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "category": "ئابووری",
+    "title": "ئابووری سەرنج و بەها",
+    "author": "ئابوورناسان | ساڵی ٢٠٢٢",
+    "snippet": "چۆنیەتی بەرهەمهێنانی بەهای ڕاستەقینە لە بازاڕدا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. بەهابەخشین</div><div class=\"summary-text\">پێشکەشکردنی شتێک کە کێشەی خەڵک چارەسەر بکات.</div></div>",
+    "quotes": [
+      {
+        "ckb": "پارە پاداشتی چارەسەرکردنی کێشەکانە.",
+        "en": "Money is a reward for solving problems."
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "category": "پەیوەندییەکان",
+    "title": "هونەری قەناعەتپێکردن",
+    "author": "پسپۆڕانی پەیوەندی | ساڵی ٢٠١٨",
+    "snippet": "ڕێگاکانی گەیاندنی بیرۆکە بە متمانەوە...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. متمانەپێکردن</div><div class=\"summary-text\">بەکارهێنانی بەڵگە و هەستی ئەرێنی بۆ قەناعەت.</div></div>",
+    "quotes": [
+      {
+        "ckb": "قەناعەتپێکردن هونەری گوێگرتن و تێگەیشتنە.",
+        "en": "Persuasion is the art of listening and understanding."
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "category": "هۆشیاری",
+    "title": "هونەری دەستبەرداربوون",
+    "author": "فەیلەسوفەکان | ساڵی ٢٠٢٠",
+    "snippet": "ئازادبوونی ناخ لەبەرامبەر ڕابردوو و قەید و بەندەکان...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ئازادبوون</div><div class=\"summary-text\">وازهێنان لەو شتانەی لە توانای گۆڕینیان نییە.</div></div>",
+    "quotes": [
+      {
+        "ckb": "دەستبەرداربوون نیشانەی لاوازی نییە، بەڵکو هێزە.",
+        "en": "Letting go is not weakness; it is strength."
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "category": "خۆپەرەسەندن",
+    "title": "بنەماکانی گەشەی کەسی لە کاردا",
+    "author": "ڕاهێنەران | ساڵی ٢٠٢١",
+    "snippet": "پەروەردەکردنی خووی باش و بەردەوامی...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. خووەکان</div><div class=\"summary-text\">گۆڕینی ژیان بە گۆڕینی خووە بچووکەکان.</div></div>",
+    "quotes": [
+      {
+        "ckb": "تۆ ئەوەیت کە بەردەوام دەیکەیت.",
+        "en": "You are what you repeatedly do."
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "category": "گشتی",
+    "title": "ژینگەی سەرکەوتن و ئارامی",
+    "author": "شارەزایانی ژیان | ساڵی ٢٠٢٢",
+    "snippet": "دروستکردنی ژینگەیەکی پاک بۆ مێشک و جەستە...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ژینگەی پاک</div><div class=\"summary-text\">دورکەوتنەوە لە ژاوەژاوی ناپێویست.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ژینگەی دەوروبەرت ئاوێنەی ناختە.",
+        "en": "Your environment reflects your inner self."
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "category": "بەرهەمداری",
+    "title": "تەکنیکەکانی تەرکیز و بەرهەمی باڵا",
+    "author": "ڕاهێنەرانی کار | ساڵی ٢٠٢١",
+    "snippet": "چۆنیەتی بەرهەمهێنانی زیاتر بە ماندووبونی کەمتر...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. بەرهەمی باڵا</div><div class=\"summary-text\">کارکردن لەسەر بنەمای کاریگەری نەک تەنها کات.</div></div>",
+    "quotes": [
+      {
+        "ckb": "کاری زیرەکانە لە کاری قورس باشترە.",
+        "en": "Work smarter, not harder."
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "category": "فەلسەفە",
+    "title": "حیکمەتی کۆن و ژیانی مۆدێرن",
+    "author": "فەیلەسوفەکان | ساڵی ٢٠٢٠",
+    "snippet": "سوودوەرگرتن لە فەلسەفەی کۆن بۆ کێشە سەردەمییەکان...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. حیکمەتی کۆن</div><div class=\"summary-text\">پەیڕەوکردنی ڕێساکانی ژیانی هێمن لە ڕابردووەوە.</div></div>",
+    "quotes": [
+      {
+        "ckb": "حیکمەتی ڕاستەقینە بە تەواوی کات کۆن نابێت.",
+        "en": "True wisdom never ages."
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "category": "دەروونناسی",
+    "title": "هونەری تێپەڕاندنی قەیرانەکان",
+    "author": "دەروونناسان | ساڵی ٢٠٢٢",
+    "snippet": "ڕەفتارکردن لە کاتی پەستانە گەورەکاندا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. هێمنی لە قەیراندا</div><div class=\"summary-text\">پاراستنی کۆنترۆڵ لە دۆخی زەحمەتدا.</div></div>",
+    "quotes": [
+      {
+        "ckb": "قەیرانەکان ڕووخساری ڕاستەقینەی مرۆڤ دەردەخەن.",
+        "en": "Crises reveal true character."
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "category": "کار",
+    "title": "بنەماکانی داهێنانی بازرگانی",
+    "author": "شارەزایانی کار | ساڵی ٢٠٢١",
+    "snippet": "دروستکردنی بیرۆکەی نوێ لە بازاڕدا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. داهێنانی بازرگانی</div><div class=\"summary-text\">پێشکەشکردنی بەرهەمی جیاواز بۆ پێشڕەوی.</div></div>",
+    "quotes": [
+      {
+        "ckb": "داهێنان جیاوازت دەکات لە ئەوانی تر.",
+        "en": "Innovation sets you apart."
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "category": "ئابووری",
+    "title": "زیرەکی دارایی و سەربەخۆیی",
+    "author": "ئابوورناسان | ساڵی ٢٠٢٠",
+    "snippet": "ڕێگاکانی گەیشتن بە ئازادی مادی...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ئازادی مادی</div><div class=\"summary-text\">ڕزگاربوون لە جەنجاڵی قەرز و خەرجی نەگونجاو.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ئازادی مادی سەرەتای ئازادی ڕاستەقینەیە.",
+        "en": "Financial freedom is the beginning of true freedom."
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "category": "پەیوەندییەکان",
+    "title": "کاریگەری کەسایەتی لە دەوروبەردا",
+    "author": "پسپۆڕانی پەیوەندی | ساڵی ٢٠١٩",
+    "snippet": "دروستکردنی سەکۆیەکی بەهێز بۆ پەیوەندی کۆمەڵایەتی...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. کەسایەتی کاریگەر</div><div class=\"summary-text\">ڕەفتاری جوان و ڕێزگرتن بنەمای سەرەکییە.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ڕەوشتی بەرز باشترین ڕیکلامی کەسایەتییە.",
+        "en": "High character is the best reputation."
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "category": "هۆشیاری",
+    "title": "فەلسەفەی سوپاسگوزاری قووڵ",
+    "author": "فەیلەسوفەکان | ساڵی ٢٠٢١",
+    "snippet": "گۆڕینی تڕوانین لە کەموکوڕی بۆ نیعمەتەکان...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. دیدگای پۆزەتیڤ</div><div class=\"summary-text\">سوپاسگوزاری بەردەوام دەروون هێمن دەکاتەوە.</div></div>",
+    "quotes": [
+      {
+        "ckb": "سوپاسگوزاری ژیان دەوڵەمەند دەکات.",
+        "en": "Gratitude enriches life."
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "category": "خۆپەرەسەندن",
+    "title": "هێزی گۆڕانکاری کەسی",
+    "author": "ڕاهێنەران | ساڵی ٢٠٢٢",
+    "snippet": "چۆنیەتی دەستپێکردنی گۆڕانکاری مەزن لە ژیاندا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. دەستپێکی نوێ</div><div class=\"summary-text\">بڕیاردانی ئازایانە بۆ گۆڕینی ئاراستەی ژیان.</div></div>",
+    "quotes": [
+      {
+        "ckb": "گۆڕانکاری لە خۆتەوە دەست پێدەکات.",
+        "en": "Change begins within yourself."
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "category": "دەروونناسی",
+    "title": "هونەری تێگەیشتن لە هەڵسوکەوتی مرۆڤ",
+    "author": "دەروونناسان | ساڵی ٢٠١٨",
+    "snippet": "شیکردنەوەی هۆکارەکانی پشت ڕەفتاری تاکەکان...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. شیکردنەوەی ڕەفتار</div><div class=\"summary-text\">تێگەیشتن لە پێویستییە بنەڕەتییەکانی مرۆڤ.</div></div>",
+    "quotes": [
+      {
+        "ckb": "تێگەیشتن لە خەڵک ئاسانترت دەکات لە مامەڵەدا.",
+        "en": "Understanding people makes dealing with them easier."
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "category": "گشتی",
+    "title": "بنەماکانی ژیانی بەختەوەر و ئارام",
+    "author": "شارەزایانی ژیان | ساڵی ٢٠٢٠",
+    "snippet": "پێکهێنانی هاوسەنگی لە نێوان کار و پشوودا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. هاوسەنگی ژیان</div><div class=\"summary-text\">دابەشکردنی کات بەسەر لایەنە گرنگەکانی ژیاندا.</div></div>",
+    "quotes": [
+      {
+        "ckb": "هاوسەنگی نهێنی ژیانێکی درێژ و بەختەوەرە.",
+        "en": "Balance is the secret to a long and happy life."
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "category": "فەلسەفە",
+    "title": "فەلسەفەی عەقڵی ئازاد",
+    "author": "فەیلەسوفە هاوچەرخەکان | ساڵی ٢٠٢١",
+    "snippet": "ئازادبوونی مێشک لە کۆت و بەندی فیکری کۆن...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ئازادی فکری</div><div class=\"summary-text\">بیرکردنەوەی سەربەخۆ دوور لە کاریگەری دەرەکی.</div></div>",
+    "quotes": [
+      {
+        "ckb": "مێشکی ئازاد سنوری نییە.",
+        "en": "A free mind has no limits."
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "category": "دەروونناسی",
+    "title": "هێزی ناخ لە بەرامبەر شکاندا",
+    "author": "دەروونناسان | ساڵی ٢٠٢٠",
+    "snippet": "پەروەردەکردنی خۆڕاگری دەروونی...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. خۆڕاگری</div><div class=\"summary-text\">توانای بەرگەگرتنی زەبرە دەروونییەکان.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ئەو شتەی ناتڕۆقێنێت، بەهێزترت دەکات.",
+        "en": "What doesn't kill you makes you stronger."
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "category": "کار",
+    "title": "بنەماکانی سەرکەوتنی بازرگانی نوێ",
+    "author": "شارەزایانی کار | ساڵی ٢٠٢٢",
+    "snippet": "ڕێگاکانی بەڕێوەبردنی کار بە شێوازی سەردەمی...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. بەڕێوەبردنی سەردەمی</div><div class=\"summary-text\">بەکارهێنانی تەکنەلۆجیا و سیستەم لە کاردا.</div></div>",
+    "quotes": [
+      {
+        "ckb": "گۆڕانکاری تەنها ڕێگای بەردەوامبوونە.",
+        "en": "Change is the only way to survive."
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "category": "ئابووری",
+    "title": "زیرەکی ئابووری خێزان",
+    "author": "ئابوورناسان | ساڵی ٢٠١٩",
+    "snippet": "ڕێکخستنی بودجەی خێزان و پاشەکەوتکردن...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. بودجەی خێزان</div><div class=\"summary-text\">دابەشکردنی داهات بە شێوازێکی هاوسەنگ.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ڕێکخستنی مالی بنەمای سەقامگیری خێزانە.",
+        "en": "Financial organization is the base of family stability."
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "category": "سەرکردایەتی",
+    "title": "هونەری بڕیاردانی خێرا",
+    "author": "سەرکردە سەرکەوتووەکان | ساڵی ٢٠٢١",
+    "snippet": "بڕیاردان لە کاتی پێویستدا بە بێ دودلێ...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. بڕیاری بوێر</div><div class=\"summary-text\">هەندێک جار بڕیاری خێرا لە بڕیاری ناتەواو باشترە.</div></div>",
+    "quotes": [
+      {
+        "ckb": "باشترین بڕیار ئەوەیە کە لە کاتی خۆیدا بدرێت.",
+        "en": "The best decision is the one made on time."
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "category": "هۆشیاری",
+    "title": "فەلسەفەی تێڕامان لە سروشتدا",
+    "author": "فەیلەسوفەکان | ساڵی ٢٠١٨",
+    "snippet": "گەڕانەوە بۆ سروشت بۆ دۆزینەوەی ئارامی...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. پەیوەندی بە سروشتەوە</div><div class=\"summary-text\">تێڕامان لە جوانییەکانی سروشت دەروون هێمن دەکات.</div></div>",
+    "quotes": [
+      {
+        "ckb": "سروشت باشترین پزیشکی دەروونە.",
+        "en": "Nature is the best healer."
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "category": "پەیوەندییەکان",
+    "title": "هونەری گوێگرتنی قووڵ",
+    "author": "پسپۆڕانی پەیوەندی | ساڵی ٢٠٢٠",
+    "snippet": "تێگەیشتن لە دەوروبەر لە ڕێگەی گوێگرتنی ڕاستەقینەوە...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. گوێگرتنی چالاک</div><div class=\"summary-text\">گرنگیدان بە وشە و هەستی بەرامبەر.</div></div>",
+    "quotes": [
+      {
+        "ckb": "گوێگرتن نیشانەی ڕێزگرتنی مەزنە.",
+        "en": "Listening is a sign of great respect."
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "category": "خۆپەرەسەندن",
+    "title": "تێکشکاندنی سستی و دواخستن",
+    "author": "ڕاهێنەران | ساڵی ٢٠٢٢",
+    "snippet": "ڕێگاکانی جێبەجێکردنی خێرای ئەرکەکان...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. نەهێشتنی دواخستن</div><div class=\"summary-text\">دەستپێکردن بە هەنگاوی زۆر بچووک.</div></div>",
+    "quotes": [
+      {
+        "ckb": "باشترین کات بۆ دەستپێکردن ئێستایە.",
+        "en": "The best time to start is now."
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "category": "دەروونناسی",
+    "title": "ئاشتی لەگەڵ ناخدا",
+    "author": "دەروونناسان | ساڵی ٢٠١٩",
+    "snippet": "قبوڵکردنی خود و لێخۆشبوون لە هەڵەکان...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. قبوڵکردنی خود</div><div class=\"summary-text\">ئاشتی ناوەکی لە قبوڵکردنی ڕاستەقینەی خودەوە دەست پێدەکات.</div></div>",
+    "quotes": [
+      {
+        "ckb": "لێخۆشبوون لە خود سەرەتای ئاشتییە.",
+        "en": "Forgiving yourself is the beginning of peace."
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "category": "گشتی",
+    "title": "بنەماکانی ژیانی هۆشیار",
+    "author": "بیرمەندان | ساڵی ٢٠٢١",
+    "snippet": "ژیان لەسەر بنەمای بەهای بەرز و هۆشیاری...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. هۆشیاری ژیان</div><div class=\"summary-text\">نرخاندنی هەموو ساتێکی ژیان بە سوپاسگوزارییەوە.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ژیانی هۆشیار ژیانێکی پڕ لە مانایە.",
+        "en": "A conscious life is a meaningful life."
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "category": "فەلسەفە",
+    "title": "فەلسەفەی گەڕان بەدوای ڕاستیدا",
+    "author": "فەیلەسوفەکان | ساڵی ٢٠٢٠",
+    "snippet": "پرسیارکردن لە بنەماکانی بوون و زانین...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. گەڕان بەدوای ڕاستیدا</div><div class=\"summary-text\">قبوڵنەکردنی رووکەش و قووڵبوونەوە لە ناوەرۆکدا.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ڕاستی تەنها بە پرسیارکردن دەدۆزرێتەوە.",
+        "en": "Truth is found through questioning."
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "category": "دەروونناسی",
+    "title": "هێزی دەروونی لە ڕووبەڕووبوونەوەی ترسدا",
+    "author": "دەروونناسان | ساڵی ٢٠٢١",
+    "snippet": "تەکنیکەکانی زاڵبوون بەسەر ترسی نەزانراودا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. زاڵبوون بەسەر ترسدا</div><div class=\"summary-text\">رووبەڕووبوونەوەی ترس وەک تاکە چارەسەر.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ترس لە ناخدا بچووک دەبێتەوە کاتێک رووبەڕووی دەبیتەوە.",
+        "en": "Fear shrinks when you face it."
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "category": "کار",
+    "title": "داهێنان و بەڕێوەبردنی تیمی داهێنەر",
+    "author": "شارەزایانی کار | ساڵی ٢٠٢٢",
+    "snippet": "دروستکردنی ژینگەی گونجاو بۆ کاری بەکۆمەڵ...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ژینگەی داهێنان</div><div class=\"summary-text\">ڕێگەدان بە تاقیکردنەوەی بیرۆکەی نوێ لە تیمدا.</div></div>",
+    "quotes": [
+      {
+        "ckb": "داهێنان پێویستی بە ژینگەیەکی ئازاد هەیە.",
+        "en": "Innovation needs a free environment."
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "category": "ئابووری",
+    "title": "بنەماکانی وەبەرهە زمانی درێژخایەن",
+    "author": "ئابوورناسان | ساڵی ٢٠١٩",
+    "snippet": "پلانڕێژی دارایی بۆ داهاتووی مەودا درێژ...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. پلانڕێژی درێژخایەن</div><div class=\"summary-text\">چاندنی تۆوی سامان بۆ داهاتوو.</div></div>",
+    "quotes": [
+      {
+        "ckb": "باشترین کات بۆ چاندنی دار بیست ساڵ پێش ئێستا بوو، دووەم باشترین کات ئێستایە.",
+        "en": "The best time to plant a tree was 20 years ago. The second best time is now."
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "category": "سەرکردایەتی",
+    "title": "سەرکردایەتی لە سەردەمی گۆڕاندا",
+    "author": "شارەزایانی بەڕێوەبردن | ساڵی ٢٠٢١",
+    "snippet": "ڕێنماییکردنی تیم لە دۆخی نەگۆڕاو و گۆڕانی خێرادا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. گۆڕانی نەرم</div><div class=\"summary-text\">سەرکردە لە کاتی قەیراندا ڕووناکی پیشان دەدات.</div></div>",
+    "quotes": [
+      {
+        "ckb": "سەرکردەی راستەقینە لە کاتی گەردەلولدا کەشتی دەجووڵێنێت.",
+        "en": "A real leader steers the ship in a storm."
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "category": "هۆشیاری",
+    "title": "هۆشیاری دەروونی و فەلسەفەی بوون",
+    "author": "فەیلەسوفەکان | ساڵی ٢٠٢٠",
+    "snippet": "تێڕامان لە مانای بوونی مرۆڤ لە گەردووندا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. بوون و مانا</div><div class=\"summary-text\">مرۆڤ خۆی مانای ژیانی خۆی دروست دەکات.</div></div>",
+    "quotes": [
+      {
+        "ckb": "مانای ژیان ئەوەیە کە تۆ پێی دەبەخشیت.",
+        "en": "The meaning of life is whatever you give it."
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "category": "پەیوەندییەکان",
+    "title": "هونەری دروستکردنی پردی پەیوەندی",
+    "author": "پسپۆڕانی پەیوەندی | ساڵی ٢٠١٨",
+    "snippet": "پەیوەندی بەهێز لەگەڵ کەسانی جیاوازدا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. پردی پەیوەندی</div><div class=\"summary-text\">تێگەیشتن لە جیاوازییەکانی مرۆڤەکان.</div></div>",
+    "quotes": [
+      {
+        "ckb": "جیاوازییەکان دەبەنە پێشەوە نەک دواوە ئەگەر تێیان بگەی.",
+        "en": "Differences drive us forward if we understand them."
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "category": "خۆپەرەسەندن",
+    "title": "هێزی ئیرادە و بەردەوامی",
+    "author": "ڕاهێنەرانی گەشە | ساڵی ٢٠٢٢",
+    "snippet": "راهێنانی دەروون لەسەر نەبەزین لە بەرامبەر زەحمەتیدا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ئیرادەی پولایین</div><div class=\"summary-text\">بەردەوامبوون سەرەڕای هەموو کۆسپەکان.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ئیرادەی بەهێز هەر دیوارێک دەڕمێنێت.",
+        "en": "A strong will breaks any wall."
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "category": "دەروونناسی",
+    "title": "ئارامی ناخ و پاکبوونەوەی دەروونی",
+    "author": "دەروونناسان | ساڵی ٢٠٢٠",
+    "snippet": "ڕزگاربوون لە بیرەوەرییە نەرێنییەکان...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. پاکبوونەوەی دەروونی</div><div class=\"summary-text\">تێپەڕاندنی برینەکانی رابردوو بۆ دەستپێکی نوێ.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ڕابردوو وانەیە نەک زیندان.",
+        "en": "The past is a school, not a prison."
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "category": "گشتی",
+    "title": "بنەماکانی بەختەوەری بەردەوام",
+    "author": "شارەزایانی ژیان | ساڵی ٢٠٢١",
+    "snippet": "ژيان لەسەر بنەمای سوپاسگوزاری و ئارامی...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. بەختەوەری ناوەکی</div><div class=\"summary-text\">بەختەوەری پەیوەندی بە شتی دەرەکی نییە، بەڵکو ناخە.</div></div>",
+    "quotes": [
+      {
+        "ckb": "بەختەوەری هەڵبژاردنە نەک بارودۆخ.",
+        "en": "Happiness is a choice, not a circumstance."
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "category": "فەلسەفە",
+    "title": "فەلسەفەی بوونگەرایی و ئازادی تاک",
+    "author": "فەیلەسوفە بوونگەراکان | ساڵی ١٩٤٥",
+    "snippet": "بەرپرسیارێتی تەواوی تاک لە بەرامبەر هەڵبژاردنەکانیدا...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. ئازادی و بەرپرسیارێتی</div><div class=\"summary-text\">مرۆڤ ئازاد لە دایک بووە و خۆی چارەنووسی دەنووسێتەوە.</div></div>",
+    "quotes": [
+      {
+        "ckb": "مرۆڤ مەحکومە بەوەی ئازاد بێت.",
+        "en": "Man is condemned to be free."
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "category": "دەروونناسی",
+    "title": "هونەری تێگەیشتن لە ناتەواوی خود",
+    "author": "دەروونناسان | ساڵی ٢٠٢١",
+    "snippet": "قبوڵکردنی سروشتی ناتەواوی مرۆڤ و هەوڵدان بۆ باشتربوون...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. قبوڵکردنی ناتەواوی</div><div class=\"summary-text\">مرۆڤ کامل نییە، بەڵکو لە گەشەی بەردەوامدایە.</div></div>",
+    "quotes": [
+      {
+        "ckb": "کاملبوون خەیاڵە، گەشە ڕاستییە.",
+        "en": "Perfection is an illusion; growth is real."
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "category": "کار",
+    "title": "ڕێگاکانی پێشکەوتنی خێرای پیشەیی",
+    "author": "ڕاوێژکارانی کار | ساڵی ٢٠٢٢",
+    "snippet": "تەرکیزکردن لەسەر لێهاتوویی سەرەکی بۆ سەرکەوتنی گەورە...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. لێهاتوویی سەرەکی</div><div class=\"summary-text\">تەرکیزکردن لەسەر ئەو شتەی تێیدا نایاب دەبیت.</div></div>",
+    "quotes": [
+      {
+        "ckb": "لە بوارێکدا باشترین بە تا دیار بکەوی.",
+        "en": "Be so good they can't ignore you."
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "category": "ئابووری",
+    "title": "ژیرانە بەکارهێنانی سەرچاوە مادییەکان",
+    "author": "ئابوورناسان | ساڵی ٢٠٢٠",
+    "snippet": "کەمکردنەوەی خەرجی ناپێویست و زیاترکردنی سەرمایە...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. خەرجی ژیرانە</div><div class=\"summary-text\">جیاکردنەوەی پێویستی لە ئارەزووی کاتی.</div></div>",
+    "quotes": [
+      {
+        "ckb": "ئەوەی پێویستت نییە بکڕە، زوو هەژار دەبیت.",
+        "en": "If you buy things you do not need, soon you will have to sell necessities."
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "category": "سەرکردایەتی",
+    "title": "سەرکردایەتی لە ڕێگەی نموونەی کردارییەوە",
+    "author": "سەرکردەکان | ساڵی ٢٠١٩",
+    "snippet": "کردارەکان قسەی بەهێزتر دەکەن لە وتەکان...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. نموونەی کرداری</div><div class=\"summary-text\">پیشاندانی ڕەفتار پێش داواکردنی لە کەسانی تر.</div></div>",
+    "quotes": [
+      {
+        "ckb": "کردارەکانت بەهێزتر لە وتەکانت قسە دەکەن.",
+        "en": "Your actions speak louder than your words."
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "category": "هۆشیاری",
+    "title": "فەلسەفەی کات و بەهای ساتەکان",
+    "author": "فەیلەسوفەکان | ساڵی ٢٠٢١",
+    "snippet": "نرخاندنی کات وەک گرانبەها ترین سامانی مرۆڤ...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. بەهای کات</div><div class=\"summary-text\">کات لە پارە بەنرخترە چونکە ناگەڕێتەوە.</div></div>",
+    "quotes": [
+      {
+        "ckb": "کات ژیانە، لەدەستدانی کات واتە لەدەستدانی ژیان.",
+        "en": "Time is life; wasting time is wasting life."
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "category": "پەیوەندییەکان",
+    "title": "هونەری دروستکردنی هاوڕێیەتی ڕاستەقینە",
+    "author": "پسپۆڕانی پەیوەندی | ساڵی ٢٠١٨",
+    "snippet": "بناغەکانی پەیوەندی درێژخایەن لەسەر بنەمای متمانە...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. متمانەی هاوبەش</div><div class=\"summary-text\">هاوڕێیەتی ڕاستەقینە لە کاتی تەنگانەدا دەردەکەوێت.</div></div>",
+    "quotes": [
+      {
+        "ckb": "هاوڕێی ڕاستەقینە لە کاتی ناخۆشدا دەناسیت.",
+        "en": "A friend in need is a friend indeed."
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "category": "خۆپەرەسەندن",
+    "title": "هێزی ئیرادە و وردەکاری لە کاردا",
+    "author": "ڕاهێنەران | ساڵی ٢٠٢٢",
+    "snippet": "گرنگیدان بە وردەکارییە بچووکەکان بۆ سەرکەوتنی گەورە...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. گرنگی وردەکاری</div><div class=\"summary-text\">سەرکەوتن بەستراوە بە وردەکارییە بچووکەکانەوە.</div></div>",
+    "quotes": [
+      {
+        "ckb": "وردەکارییەکان جیاوازی دروست دەکەن.",
+        "en": "Details make all the difference."
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "category": "دەروونناسی",
+    "title": "هۆشیاری دەروونی و هێزی بیرکردنەوەی ئەرێنی",
+    "author": "دەروونناسان | ساڵی ٢٠٢٠",
+    "snippet": "چۆنیەتی ڕزگاربوون لە بیرکردنەوەی نەرێنی...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. گۆڕینی بیرکردنەوە</div><div class=\"summary-text\">پاککردنەوەی مێشک لە هاوکێشە نەرێنییەکان.</div></div>",
+    "quotes": [
+      {
+        "ckb": "مێشكت باخە، گوڵی ئەرێنی تێیدا بچێنە.",
+        "en": "Your mind is a garden; plant positive thoughts."
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "category": "سەرکەوتنی کۆتایی",
+    "title": "فەلسەفەی کۆتایی و گەیشتن بە لوتکە",
+    "author": "فەیلەسوف و ڕاهێنەرانی ژیان | ساڵی ٢٠٢٢",
+    "snippet": "پوختەی ڕێگاکانی سەرکەوتن و بەدیهێنانی ئامانجە مەزنەکان...",
+    "summary": "<div class=\"summary-section\"><div class=\"summary-heading\">📍 ١. لوتکەی سەرکەوتن</div><div class=\"summary-text\">گەیشتن بە ئارامی و سەرکەوتن دوای ماندووبوون و هەوڵی بەردەوام.</div></div>",
+    "quotes": [
+      {
+        "ckb": "لوتکەی شاخەکە تەنها دەستپێکی گەشتێکی نوێیە.",
+        "en": "The peak of the mountain is just the beginning of a new journey."
+      }
     ]
   }
 ]
